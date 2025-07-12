@@ -18,22 +18,22 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import thaumcraft.api.aspects.Aspect;
 
-public class ItemTerraRing extends ItemBaubleRingBase {
+public class ItemAquaRing extends ItemBaubleRingBase {
 
     static final int RING_COUNT = 3;
     private IIcon[] icons;
 
-    public ItemTerraRing() {
+    public ItemAquaRing() {
         super();
-        this.setUnlocalizedName("terraRing");
-        this.setTextureName("terraRing");
+        this.setUnlocalizedName("aquaRing");
+        this.setTextureName("aquaRing");
     }
 
     @SideOnly(Side.CLIENT)
     @Override
     public void addInformation(ItemStack stack, EntityPlayer player, List tooltip, boolean debug) {
         Aspect aspect = Aspect.getPrimalAspects()
-            .get(1);
+            .get(3);
         tooltip.add(
             aspect.getChatcolor() + aspect.getName()
                 + " "
@@ -48,7 +48,7 @@ public class ItemTerraRing extends ItemBaubleRingBase {
     @Override
     public int getColorFromItemStack(ItemStack stack, int par2) {
         return Aspect.getPrimalAspects()
-            .get(1)
+            .get(3)
             .getColor();
     }
 
@@ -79,11 +79,11 @@ public class ItemTerraRing extends ItemBaubleRingBase {
     public int getVisDiscount(ItemStack stack, EntityPlayer player, Aspect aspect) {
         return switch (stack.getItemDamage()) {
             case 0 -> (Aspect.getPrimalAspects()
-                .get(1) == aspect ? 3 : 0);
+                .get(3) == aspect ? 3 : 0);
             case 1 -> (Aspect.getPrimalAspects()
-                .get(1) == aspect ? 5 : 0);
+                .get(3) == aspect ? 5 : 0);
             case 2 -> (Aspect.getPrimalAspects()
-                .get(1) == aspect ? 7 : 0);
+                .get(3) == aspect ? 7 : 0);
             default -> 0;
         };
     }
