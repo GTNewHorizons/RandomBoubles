@@ -1,5 +1,7 @@
 package com.gtnewhorizon.randomboubles;
 
+import com.gtnewhorizon.randomboubles.items.rings.ItemOrdoRing;
+import com.gtnewhorizon.randomboubles.items.rings.ItemPerditioRing;
 import net.minecraft.item.Item;
 
 import com.gtnewhorizon.randomboubles.items.ItemBaubleRing;
@@ -35,6 +37,10 @@ public class BaubleItems {
             GameRegistry.registerItem(ignisRing, "ignisRing", RandomBoubles.MODID);
             aquaRing = new ItemAquaRing();
             GameRegistry.registerItem(aquaRing, "aquaRing", RandomBoubles.MODID);
+            ordoRing = new ItemOrdoRing();
+            GameRegistry.registerItem(ordoRing, "ordoRing", RandomBoubles.MODID);
+            perditioRing = new ItemPerditioRing();
+            GameRegistry.registerItem(perditioRing, "perditioRing", RandomBoubles.MODID);
         }
     }
 }
