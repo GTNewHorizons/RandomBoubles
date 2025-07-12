@@ -70,7 +70,7 @@ public class ItemOrdoRing extends ItemBaubleRingBase {
         icons = new IIcon[RING_COUNT];
 
         for (int i = 0; i < RING_COUNT; i++) {
-            icons[i] = register.registerIcon(RandomBoubles.MODID + ":rings/" + this.getIconString());
+            icons[i] = register.registerIcon(RandomBoubles.MODID + ":rings/baseRing");
         }
     }
 
