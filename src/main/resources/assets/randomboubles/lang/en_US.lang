@@ -1,2 +1,9 @@
 item.ring.0.name=Miner's Ring
 item.ring.0.desc=Gives Haste
+
+item.aerRing.0.name=Magician's Ring of Aer
+item.aerRing.0.discount=3
+item.aerRing.1.name=Archmage's Ring of Aer
+item.aerRing.1.discount=5
+item.aerRing.2.name=Master's Ring of Aer
+item.aerRing.2.discount=7
