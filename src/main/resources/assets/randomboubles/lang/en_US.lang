@@ -7,3 +7,38 @@ item.aerRing.1.name=Archmage's Ring of Aer
 item.aerRing.1.discount=5
 item.aerRing.2.name=Master's Ring of Aer
 item.aerRing.2.discount=7
+
+item.terraRing.0.name=Magician's Ring of Terra
+item.terraRing.0.discount=3
+item.terraRing.1.name=Archmage's Ring of Terra
+item.terraRing.1.discount=5
+item.terraRing.2.name=Master's Ring of Terra
+item.terraRing.2.discount=7
+
+item.ignisRing.0.name=Magician's Ring of Ignis
+item.ignisRing.0.discount=3
+item.ignisRing.1.name=Archmage's Ring of Ignis
+item.ignisRing.1.discount=5
+item.ignisRing.2.name=Master's Ring of Ignis
+item.ignisRing.2.discount=7
+
+item.aquaRing.0.name=Magician's Ring of Aqua
+item.aquaRing.0.discount=3
+item.aquaRing.1.name=Archmage's Ring of Aqua
+item.aquaRing.1.discount=5
+item.aquaRing.2.name=Master's Ring of Aqua
+item.aquaRing.2.discount=7
+
+item.ordoRing.0.name=Magician's Ring of Ordo
+item.ordoRing.0.discount=3
+item.ordoRing.1.name=Archmage's Ring of Ordo
+item.ordoRing.1.discount=5
+item.ordoRing.2.name=Master's Ring of Ordo
+item.ordoRing.2.discount=7
+
+item.perditioRing.0.name=Magician's Ring of Perditio
+item.perditioRing.0.discount=3
+item.perditioRing.1.name=Archmage's Ring of Perditio
+item.perditioRing.1.discount=5
+item.perditioRing.2.name=Master's Ring of Perditio
+item.perditioRing.2.discount=7
