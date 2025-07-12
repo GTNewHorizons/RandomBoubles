@@ -1,7 +1,6 @@
 package com.gtnewhorizon.randomboubles.items.rings;
 
 import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;
 
 import baubles.api.BaubleType;

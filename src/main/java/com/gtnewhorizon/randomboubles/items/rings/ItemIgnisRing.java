@@ -8,6 +8,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
@@ -35,7 +36,7 @@ public class ItemIgnisRing extends ItemBaubleRingBase {
         Aspect aspect = Aspect.getPrimalAspects()
             .get(2);
         tooltip.add(
-            aspect.getChatcolor() + aspect.getName()
+            EnumChatFormatting.RED + aspect.getName()
                 + " "
                 + StatCollector.translateToLocal("tc.discount")
                 + ": "
