@@ -1,8 +1,7 @@
 package com.gtnewhorizon.randomboubles.items.rings;
 
-import com.gtnewhorizon.randomboubles.RandomBoubles;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import java.util.List;
+
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,9 +12,12 @@ import net.minecraft.util.EnumChatFormatting;
 import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
-import thaumcraft.api.aspects.Aspect;
 
-import java.util.List;
+import com.gtnewhorizon.randomboubles.RandomBoubles;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import thaumcraft.api.aspects.Aspect;
 
 public class ItemOrdoRing extends ItemBaubleRingBase {
 

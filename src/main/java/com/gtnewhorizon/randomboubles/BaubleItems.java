@@ -1,13 +1,14 @@
 package com.gtnewhorizon.randomboubles;
 
-import com.gtnewhorizon.randomboubles.items.rings.ItemOrdoRing;
-import com.gtnewhorizon.randomboubles.items.rings.ItemPerditioRing;
 import net.minecraft.item.Item;
 
 import com.gtnewhorizon.randomboubles.items.ItemBaubleRing;
 import com.gtnewhorizon.randomboubles.items.rings.ItemAerRing;
 import com.gtnewhorizon.randomboubles.items.rings.ItemAquaRing;
+import com.gtnewhorizon.randomboubles.items.rings.ItemCombinationRings;
 import com.gtnewhorizon.randomboubles.items.rings.ItemIgnisRing;
+import com.gtnewhorizon.randomboubles.items.rings.ItemOrdoRing;
+import com.gtnewhorizon.randomboubles.items.rings.ItemPerditioRing;
 import com.gtnewhorizon.randomboubles.items.rings.ItemTerraRing;
 
 import cpw.mods.fml.common.Loader;
@@ -22,6 +23,7 @@ public class BaubleItems {
     public static Item aquaRing;
     public static Item ordoRing;
     public static Item perditioRing;
+    public static Item combinationRing;
 
     public static final String THAUMCRAFT = "Thaumcraft";
 
@@ -41,6 +43,8 @@ public class BaubleItems {
             GameRegistry.registerItem(ordoRing, "ordoRing", RandomBoubles.MODID);
             perditioRing = new ItemPerditioRing();
             GameRegistry.registerItem(perditioRing, "perditioRing", RandomBoubles.MODID);
+            combinationRing = new ItemCombinationRings();
+            GameRegistry.registerItem(combinationRing, "combinationRing", RandomBoubles.MODID);
         }
     }
 }
