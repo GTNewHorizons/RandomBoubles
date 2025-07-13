@@ -153,3 +153,11 @@ randomboubles_research_page.RBTHEORYRINGOFCOMBINATIONS.1=A breakthrough!<BR>By f
 randomboubles_research_name.RBTHEORYRINGOFMAGICALPROTECTION=Protection Theory
 randomboubles_research_text.RBTHEORYRINGOFMAGICALPROTECTION=Knowledge Overload
 randomboubles_research_page.RBTHEORYRINGOFMAGICALPROTECTION.1=You just had a thought, why don't you inscribe the rings with protection magic?
+
+randomboubles_research_name.RBSPELLCASTERSRINGOFTHESKY=The Spellcaster's First Combination
+randomboubles_research_text.RBSPELLCASTERSRINGOFTHESKY=Looking to the Sky
+randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY.1=By taking inspiration on how the energies of the sky interact with each other, you have figured out that a combination of Air, Fire and Order comes together together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies. But perhaps you can find a way to restore its lost power...
+
+randomboubles_research_name.RBSPELLSLINGERSRINGOFTHEEARTH=The Spellslinger's First Combination
+randomboubles_research_text.RBSPELLSLINGERSRINGOFTHEEARTH=Looking to the Earth
+randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH.1=By taking inspiration on how the energies of the ground below you interact with each other, you have figured out that a combination of Earth, Water and Entropy comes together together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies. But perhaps you can find a way to restore its lost power...

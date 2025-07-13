@@ -229,5 +229,49 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5) }));
 
+        // Combination Rings
+        RingResearch.recipeList.put(
+            "RBSpellcastersRingOfTheSky",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBSPELLCASTERSRINGOFTHESKY",
+                new ItemStack(BaubleItems.combinationRing, 1, 0),
+                5,
+                (new AspectList()).add(Aspect.AIR, 256)
+                    .add(Aspect.ORDER, 256)
+                    .add(Aspect.FIRE, 256)
+                    .add(Aspect.MAGIC, 256)
+                    .add(Aspect.AURA, 96)
+                    .add(Aspect.ENERGY, 64),
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack[] { new ItemStack(BaubleItems.aerRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.ordoRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.ignisRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
+        RingResearch.recipeList.put(
+            "RBSpellslingersRingoftheEarth",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBSPELLSLINGERSRINGOFTHEEARTH",
+                new ItemStack(BaubleItems.combinationRing, 1, 3),
+                5,
+                (new AspectList()).add(Aspect.EARTH, 256)
+                    .add(Aspect.ENTROPY, 256)
+                    .add(Aspect.WATER, 256)
+                    .add(Aspect.MAGIC, 256)
+                    .add(Aspect.AURA, 96)
+                    .add(Aspect.ENERGY, 64),
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack[] { new ItemStack(BaubleItems.terraRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.perditioRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.aquaRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+
     }
 }
