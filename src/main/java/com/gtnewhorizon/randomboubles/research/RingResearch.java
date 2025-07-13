@@ -276,6 +276,38 @@ public class RingResearch {
             new ItemStack(BaubleItems.terraRing, 1, 1)).setPages(pages)
                 .setParents("RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFTERRA", "RBMAGICIANSRINGOFIGNIS", "INFUSION")
                 .registerResearchItem();
+        // Archmage's Ring of Ignis
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFIGNIS.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfIgnis")), };
+        researchAspects = new AspectList().add(Aspect.FIRE, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 32);
+        getResearchItem(
+            "RBARCHMAGESRINGOFIGNIS",
+            "RBRINGS",
+            researchAspects,
+            2,
+            0,
+            0,
+            new ItemStack(BaubleItems.ignisRing, 1, 1)).setPages(pages)
+                .setParents("RBMAGICIANSRINGOFIGNIS", "RBMAGICIANSRINGOFTERRA", "RBMAGICIANSRINGOFPERDITIO", "INFUSION")
+                .registerResearchItem();
+        // Archmage's Ring of Aqua
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFAQUA.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfAqua")), };
+        researchAspects = new AspectList().add(Aspect.WATER, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 32);
+        getResearchItem(
+            "RBARCHMAGESRINGOFAQUA",
+            "RBRINGS",
+            researchAspects,
+            -2,
+            0,
+            0,
+            new ItemStack(BaubleItems.aquaRing, 1, 1)).setPages(pages)
+                .setParents("RBMAGICIANSRINGOFAQUA", "RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFPERDITIO", "INFUSION")
+                .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,

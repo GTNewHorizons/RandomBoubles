@@ -52,11 +52,45 @@ public class InfusionRecipes {
                     .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.terraRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+        RingResearch.recipeList.put(
+            "RBArchmagesRingOfIgnis",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBARCHMAGESRINGOFIGNIS",
+                new ItemStack(BaubleItems.ignisRing, 1, 1),
+                5,
+                (new AspectList()).add(Aspect.FIRE, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
+                new ItemStack(BaubleItems.ignisRing, 1, 0),
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1) }));
+        RingResearch.recipeList.put(
+            "RBArchmagesRingOfAqua",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBARCHMAGESRINGOFAQUA",
+                new ItemStack(BaubleItems.aquaRing, 1, 1),
+                5,
+                (new AspectList()).add(Aspect.WATER, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
+                new ItemStack(BaubleItems.aquaRing, 1, 0),
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2) }));
 
     }
 }
