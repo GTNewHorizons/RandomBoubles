@@ -75,6 +75,9 @@ randomboubles_research_page.RBMAGICIANSRINGOFAER.1=By imbuing The ring with even
 randomboubles_research_name.RBARCHMAGESRINGOFAER=The Archmage's Air Ring
 randomboubles_research_text.RBARCHMAGESRINGOFAER=A Circle of Crystallized Air.
 randomboubles_research_page.RBARCHMAGESRINGOFAER.1=A breakthrough in magical imbuement has allowed you to find a way to empower the ring even more. <BR><BR>I think this is the end, unless you can bend the energies of creation itself...
+randomboubles_research_name.RBMASTERSRINGOFAER=The Master Mage's Air Ring
+randomboubles_research_text.RBMASTERSRINGOFAER=A Circle of Primordial Air.
+randomboubles_research_page.RBMASTERSRINGOFAER.1=A surprising find, the Pearl seems to buckle reality itself, it seems to be a perfect component for strengthening the ring one final time.
 
 randomboubles_research_name.RBAPPRENTICERINGOFTERRA=A Ring of Earth
 randomboubles_research_text.RBAPPRENTICERINGOFTERRA=A Circle of Solid Earth Magic.
@@ -85,6 +88,9 @@ randomboubles_research_page.RBMAGICIANSRINGOFTERRA.1=By imbuing The ring with ev
 randomboubles_research_name.RBARCHMAGESRINGOFTERRA=The Archmage's Earth Ring
 randomboubles_research_text.RBARCHMAGESRINGOFTERRA=A Circle of Crystallized Earth.
 randomboubles_research_page.RBARCHMAGESRINGOFTERRA.1=A breakthrough in magical imbuement has allowed you to find a way to empower the ring even more. <BR><BR>I think this is the end, unless you can bend the energies of creation itself...
+randomboubles_research_name.RBMASTERSRINGOFTERRA=The Master Mage's Earth Ring
+randomboubles_research_text.RBMASTERSRINGOFTERRA=A Circle of Primordial Earth.
+randomboubles_research_page.RBMASTERSRINGOFTERRA.1=A surprising find, the Pearl seems to buckle reality itself, it seems to be a perfect component for strengthening the ring one final time.
 
 randomboubles_research_name.RBAPPRENTICERINGOFIGNIS=A Ring of Fire
 randomboubles_research_text.RBAPPRENTICERINGOFIGNIS=A Circle of Solid Fire Magic.
@@ -95,6 +101,9 @@ randomboubles_research_page.RBMAGICIANSRINGOFIGNIS.1=By imbuing The ring with ev
 randomboubles_research_name.RBARCHMAGESRINGOFIGNIS=The Archmage's Fire Ring
 randomboubles_research_text.RBARCHMAGESRINGOFIGNIS=A Circle of Crystallized Fire.
 randomboubles_research_page.RBARCHMAGESRINGOFIGNIS.1=A breakthrough in magical imbuement has allowed you to find a way to empower the ring even more. <BR><BR>I think this is the end, unless you can bend the energies of creation itself...
+randomboubles_research_name.RBMASTERSRINGOFIGNIS=The Master Mage's Fire Ring
+randomboubles_research_text.RBMASTERSRINGOFIGNIS=A Circle of Primordial Fire.
+randomboubles_research_page.RBMASTERSRINGOFIGNIS.1=A surprising find, the Pearl seems to buckle reality itself, it seems to be a perfect component for strengthening the ring one final time.
 
 randomboubles_research_name.RBAPPRENTICERINGOFAQUA=A Ring of Water
 randomboubles_research_text.RBAPPRENTICERINGOFAQUA=A Circle of Solid Water Magic.
@@ -105,6 +114,9 @@ randomboubles_research_page.RBMAGICIANSRINGOFAQUA.1=By imbuing The ring with eve
 randomboubles_research_name.RBARCHMAGESRINGOFAQUA=The Archmage's Water Ring
 randomboubles_research_text.RBARCHMAGESRINGOFAQUA=A Circle of Crystallized Water.
 randomboubles_research_page.RBARCHMAGESRINGOFAQUA.1=A breakthrough in magical imbuement has allowed you to find a way to empower the ring even more. <BR><BR>I think this is the end, unless you can bend the energies of creation itself...
+randomboubles_research_name.RBMASTERSRINGOFAQUA=The Master Mage's Water Ring
+randomboubles_research_text.RBMASTERSRINGOFAQUA=A Circle of Primordial Water.
+randomboubles_research_page.RBMASTERSRINGOFAQUA.1=A surprising find, the Pearl seems to buckle reality itself, it seems to be a perfect component for strengthening the ring one final time.
 
 randomboubles_research_name.RBAPPRENTICERINGOFORDO=A Ring of Order
 randomboubles_research_text.RBAPPRENTICERINGOFORDO=A Circle of Solid Order Magic.
@@ -115,6 +127,9 @@ randomboubles_research_page.RBMAGICIANSRINGOFORDO.1=By imbuing The ring with eve
 randomboubles_research_name.RBARCHMAGESRINGOFORDO=The Archmage's Order Ring
 randomboubles_research_text.RBARCHMAGESRINGOFORDO=A Circle of Crystallized Order.
 randomboubles_research_page.RBARCHMAGESRINGOFORDO.1=A breakthrough in magical imbuement has allowed you to find a way to empower the ring even more. <BR><BR>I think this is the end, unless you can bend the energies of creation itself...
+randomboubles_research_name.RBMASTERSRINGOFORDO=The Master Mage's Order Ring
+randomboubles_research_text.RBMASTERSRINGOFORDO=A Circle of Primordial Order.
+randomboubles_research_page.RBMASTERSRINGOFORDO.1=A surprising find, the Pearl seems to buckle reality itself, it seems to be a perfect component for strengthening the ring one final time.
 
 randomboubles_research_name.RBAPPRENTICERINGOFPERDITIO=A Ring of Entropy
 randomboubles_research_text.RBAPPRENTICERINGOFPERDITIO=A Circle of Solid Entropy Magic.
@@ -125,3 +140,6 @@ randomboubles_research_page.RBMAGICIANSRINGOFPERDITIO.1=By imbuing The ring with
 randomboubles_research_name.RBARCHMAGESRINGOFPERDITIO=The Archmage's Entropy Ring
 randomboubles_research_text.RBARCHMAGESRINGOFPERDITIO=A Circle of Crystallized Entropy.
 randomboubles_research_page.RBARCHMAGESRINGOFPERDITIO.1=A breakthrough in magical imbuement has allowed you to find a way to empower the ring even more. <BR><BR>I think this is the end, unless you can bend the energies of creation itself...
+randomboubles_research_name.RBMASTERSRINGOFPERDITIO=The Master Mage's Entropy Ring
+randomboubles_research_text.RBMASTERSRINGOFPERDITIO=A Circle of Primordial Entropy.
+randomboubles_research_page.RBMASTERSRINGOFPERDITIO.1=A surprising find, the Pearl seems to buckle reality itself, it seems to be a perfect component for strengthening the ring one final time.
