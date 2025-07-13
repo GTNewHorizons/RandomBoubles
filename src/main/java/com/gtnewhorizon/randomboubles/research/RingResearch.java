@@ -443,7 +443,7 @@ public class RingResearch {
                 .setParents("RBARCHMAGESRINGOFPERDITIO", "RBARCHMAGESRINGOFIGNIS", "RBARCHMAGESRINGOFAQUA", "PRIMPEARL")
                 .registerResearchItem();
 
-        // Mastering the Elements
+        // Master of the Elemental Rings
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTEROFTHEELEMENTALRINGS.1") };
         researchAspects = new AspectList().add(Aspect.AIR, 32)
             .add(Aspect.EARTH, 32)
@@ -470,6 +470,28 @@ public class RingResearch {
                     "RBMASTERSRINGOFAQUA")
                 .setPages(pages)
                 .registerResearchItem();
+        // Ring of Combinations
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBTHEORYRINGOFCOMBINATIONS.1") };
+        researchAspects = new AspectList().add(Aspect.AIR, 32)
+            .add(Aspect.EARTH, 32)
+            .add(Aspect.FIRE, 32)
+            .add(Aspect.WATER, 32)
+            .add(Aspect.ORDER, 32)
+            .add(Aspect.ENTROPY, 32)
+            .add(Aspect.MAGIC, 64)
+            .add(Aspect.AURA, 64);
+        getResearchItem(
+            "RBTHEORYRINGOFCOMBINATIONS",
+            "RBRINGS",
+            researchAspects,
+            -4,
+            -2,
+            0,
+            new ItemStack(BaubleItems.combinationRing, 1, 6)).setRound()
+            .setParents(
+                "RBMASTEROFTHEELEMENTALRINGS")
+            .setPages(pages)
+            .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,
