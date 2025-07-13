@@ -157,10 +157,16 @@ randomboubles_research_page.RBTHEORYRINGOFMAGICALPROTECTION.1=You just had a tho
 randomboubles_research_name.RBSPELLCASTERSRINGOFTHESKY=The Spellcaster's First Combination
 randomboubles_research_text.RBSPELLCASTERSRINGOFTHESKY=Looking to the Sky
 randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY.1=By taking inspiration on how the energies of the sky interact with each other, you have figured out that a combination of Air, Fire and Order comes together together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies. But perhaps you can find a way to restore its lost power...
+randomboubles_research_name.RBEXOTICRINGOFTHESKY=The Second Combination of the Sky
+randomboubles_research_text.RBEXOTICRINGOFTHESKY=Refining the energies of the Sky
+randomboubles_research_page.RBEXOTICRINGOFTHESKY.1=You have found that the only way of restoring power to the ring is by merging multiple of them together.
 
 randomboubles_research_name.RBSPELLSLINGERSRINGOFTHEEARTH=The Spellslinger's First Combination
 randomboubles_research_text.RBSPELLSLINGERSRINGOFTHEEARTH=Looking to the Earth
 randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH.1=By taking inspiration on how the energies of the ground below you interact with each other, you have figured out that a combination of Earth, Water and Entropy comes together together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies. But perhaps you can find a way to restore its lost power...
+randomboubles_research_name.RBEXOTICRINGOFTHEEARTH=The Second Combination of the Earth
+randomboubles_research_text.RBEXOTICRINGOFTHEEARTH=Refining the energies of the Earth
+randomboubles_research_page.RBEXOTICRINGOFTHEEARTH.1=You have found that the only way of restoring power to the ring is by merging multiple of them together.
 
 randomboubles_research_name.RBTHAUMATURGESRING=The Thaumaturge's Ring
 randomboubles_research_text.RBTHAUMATURGESRING=A ring for all Aspects

@@ -550,8 +550,43 @@ public class RingResearch {
             new ItemStack(BaubleItems.combinationRing, 1, 3)).setParents("RBTHEORYRINGOFCOMBINATIONS")
                 .setPages(pages)
                 .registerResearchItem();
+        // Exotic's Ring of the Sky
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBEXOTICRINGOFTHESKY.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBExoticRingOfTheSky")) };
+        researchAspects = new AspectList().add(Aspect.AIR, 32)
+            .add(Aspect.FIRE, 32)
+            .add(Aspect.ORDER, 32)
+            .add(Aspect.MAGIC, 64)
+            .add(Aspect.AURA, 64);
+        getResearchItem(
+            "RBEXOTICRINGOFTHESKY",
+            "RBRINGS",
+            researchAspects,
+            -6,
+            -4,
+            0,
+            new ItemStack(BaubleItems.combinationRing, 1, 0)).setParents("RBSPELLCASTERSRINGOFTHESKY")
+                .setPages(pages)
+                .registerResearchItem();
+        // Exotic Ring of the Earth
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBEXOTICRINGOFTHEEARTH.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBExoticRingoftheEarth")) };
+        researchAspects = new AspectList().add(Aspect.EARTH, 32)
+            .add(Aspect.WATER, 32)
+            .add(Aspect.ENTROPY, 32)
+            .add(Aspect.MAGIC, 64)
+            .add(Aspect.AURA, 64);
+        getResearchItem(
+            "RBEXOTICRINGOFTHEEARTH",
+            "RBRINGS",
+            researchAspects,
+            -6,
+            0,
+            0,
+            new ItemStack(BaubleItems.combinationRing, 1, 4)).setParents("RBSPELLSLINGERSRINGOFTHEEARTH")
+                .setPages(pages)
+                .registerResearchItem();
 
-        
         // Thaumaturge's Ring
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBTHAUMATURGESRING.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing")) };
@@ -571,7 +606,16 @@ public class RingResearch {
             -2,
             0,
             new ItemStack(BaubleItems.combinationRing, 1, 6))
-                .setParents("RBSPELLCASTERSRINGOFTHESKY", "RBSPELLSLINGERSRINGOFTHEEARTH", "RBTHEORYRINGOFCOMBINATIONS") // TODO: Replace with the final variants of the above research.
+                .setParents("RBSPELLCASTERSRINGOFTHESKY", "RBSPELLSLINGERSRINGOFTHEEARTH", "RBTHEORYRINGOFCOMBINATIONS") // TODO:
+                                                                                                                         // Replace
+                                                                                                                         // with
+                                                                                                                         // the
+                                                                                                                         // final
+                                                                                                                         // variants
+                                                                                                                         // of
+                                                                                                                         // the
+                                                                                                                         // above
+                                                                                                                         // research.
                 .setPages(pages)
                 .registerResearchItem();
     }
