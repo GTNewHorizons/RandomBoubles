@@ -160,6 +160,9 @@ randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY.1=By taking inspiration o
 randomboubles_research_name.RBEXOTICRINGOFTHESKY=The Second Combination of the Sky
 randomboubles_research_text.RBEXOTICRINGOFTHESKY=Refining the energies of the Sky
 randomboubles_research_page.RBEXOTICRINGOFTHESKY.1=You have found that the only way of restoring power to the ring is by merging multiple of them together.
+randomboubles_research_name.RBRUNEFORGEDRINGOFTHESKY=The Final Combination of the Sky
+randomboubles_research_text.RBRUNEFORGEDOFTHESKY=Tuning the energies of the Sky
+randomboubles_research_page.RBRUNEFORGEDOFTHESKY.1=Finally, the true power of the Ring has been revealed.
 
 randomboubles_research_name.RBSPELLSLINGERSRINGOFTHEEARTH=The Spellslinger's First Combination
 randomboubles_research_text.RBSPELLSLINGERSRINGOFTHEEARTH=Looking to the Earth
@@ -167,6 +170,9 @@ randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH.1=By taking inspiratio
 randomboubles_research_name.RBEXOTICRINGOFTHEEARTH=The Second Combination of the Earth
 randomboubles_research_text.RBEXOTICRINGOFTHEEARTH=Refining the energies of the Earth
 randomboubles_research_page.RBEXOTICRINGOFTHEEARTH.1=You have found that the only way of restoring power to the ring is by merging multiple of them together.
+randomboubles_research_name.RBRUNEFORGEDRINGOFTHEEARTH=The Final Combination of the Earth
+randomboubles_research_text.RBRUNEFORGEDRINGOFTHEEARTH=Tuning the energies of the Earth
+randomboubles_research_page.RBRUNEFORGEDRINGOFTHEEARTH.1=Finally, the true power of the Ring has been revealed.
 
 randomboubles_research_name.RBTHAUMATURGESRING=The Thaumaturge's Ring
 randomboubles_research_text.RBTHAUMATURGESRING=A ring for all Aspects

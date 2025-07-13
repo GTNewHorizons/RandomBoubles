@@ -314,6 +314,48 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.combinationRing, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+        RingResearch.recipeList.put(
+            "RBRuneforgedRingOfTheSky",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBRUNEFORGEDRINGOFTHESKY",
+                new ItemStack(BaubleItems.combinationRing, 1, 2),
+                5,
+                (new AspectList()).add(Aspect.AIR, 1024)
+                    .add(Aspect.ORDER, 1024)
+                    .add(Aspect.FIRE, 1024)
+                    .add(Aspect.MAGIC, 1024)
+                    .add(Aspect.AURA, 384)
+                    .add(Aspect.ENERGY, 256),
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 1),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.combinationRing, 1, 1),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.combinationRing, 1, 1),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
+        RingResearch.recipeList.put(
+            "RBRuneforgedRingoftheEarth",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBRUNEFORGEDRINGOFTHEEARTH",
+                new ItemStack(BaubleItems.combinationRing, 1, 5),
+                5,
+                (new AspectList()).add(Aspect.EARTH, 1024)
+                    .add(Aspect.ENTROPY, 1024)
+                    .add(Aspect.WATER, 1024)
+                    .add(Aspect.MAGIC, 1024)
+                    .add(Aspect.AURA, 384)
+                    .add(Aspect.ENERGY, 256),
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 4),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.combinationRing, 1, 4),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.combinationRing, 1, 4),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
 
         RingResearch.recipeList.put(
             "RBThaumaturgesRing",
@@ -321,18 +363,21 @@ public class InfusionRecipes {
                 "RBTHAUMATURGESRING",
                 new ItemStack(BaubleItems.combinationRing, 1, 6),
                 5,
-                (new AspectList()).add(Aspect.EARTH, 256)
-                    .add(Aspect.ENTROPY, 256)
-                    .add(Aspect.WATER, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.AIR, 2048)
+                    .add(Aspect.ORDER, 2048)
+                    .add(Aspect.FIRE, 2048)
+                    .add(Aspect.EARTH, 2048)
+                    .add(Aspect.ENTROPY, 2048)
+                    .add(Aspect.WATER, 2048)
+                    .add(Aspect.MAGIC, 2048)
+                    .add(Aspect.AURA, 768)
+                    .add(Aspect.ENERGY, 512),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 2),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(ConfigBlocks.blockCrystal, 1, 1),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigBlocks.blockCrystal, 1, 2),
                     salisMundus, new ItemStack(BaubleItems.combinationRing, 1, 5), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigBlocks.blockCrystal, 1, 5),
-                    salisMundus, new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), new ItemStack(ConfigBlocks.blockCrystal, 1, 4),
+                    salisMundus, new ItemStack(ConfigBlocks.blockCrystal, 1, 5) }));
     }
 }
