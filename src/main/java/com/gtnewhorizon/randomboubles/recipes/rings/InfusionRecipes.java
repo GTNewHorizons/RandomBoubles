@@ -39,6 +39,23 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), new ItemStack(ConfigItems.itemResource, 1, 14),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), new ItemStack(ConfigItems.itemResource, 1, 14),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
+        RingResearch.recipeList.put(
+            "RBArchmagesRingOfTerra",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBARCHMAGESRINGOFTERRA",
+                new ItemStack(BaubleItems.terraRing, 1, 1),
+                5,
+                (new AspectList()).add(Aspect.EARTH, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
+                new ItemStack(BaubleItems.terraRing, 1, 0),
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1) }));
 
     }
 }

@@ -260,6 +260,22 @@ public class RingResearch {
             new ItemStack(BaubleItems.aerRing, 1, 1)).setPages(pages)
                 .setParents("RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFAQUA", "INFUSION")
                 .registerResearchItem();
+        // Archmage's Ring of Terra
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFAER.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfAer")), };
+        researchAspects = new AspectList().add(Aspect.EARTH, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 32);
+        getResearchItem(
+            "RBARCHMAGESRINGOFTERRA",
+            "RBRINGS",
+            researchAspects,
+            2,
+            -4,
+            0,
+            new ItemStack(BaubleItems.aerRing, 1, 1)).setPages(pages)
+                .setParents("RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFTERRA", "RBMAGICIANSRINGOFIGNIS", "INFUSION")
+                .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,
