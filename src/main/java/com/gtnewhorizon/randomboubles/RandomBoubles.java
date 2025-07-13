@@ -3,8 +3,12 @@ package com.gtnewhorizon.randomboubles;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.gtnewhorizon.randomboubles.research.RingResearch;
+
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLMissingMappingsEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -12,6 +16,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
     modid = RandomBoubles.MODID,
     name = "Random Boubles",
     version = Tags.VERSION,
+    dependencies = "after:Thaumcraft;",
     acceptedMinecraftVersions = "[1.7.10]")
 public class RandomBoubles {
 
@@ -21,6 +26,14 @@ public class RandomBoubles {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         BaubleItems.init();
+    }
+
+    @Mod.EventHandler
+    public void postInit(FMLPostInitializationEvent event) {
+        if (Loader.isModLoaded("Thaumcraft")) {
+            RingResearch.setupResearchPage();
+            RingResearch.registerResearch();
+        }
     }
 
     @Mod.EventHandler
