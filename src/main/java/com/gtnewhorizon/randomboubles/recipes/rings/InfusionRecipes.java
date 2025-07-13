@@ -25,10 +25,10 @@ public class InfusionRecipes {
                 "RBARCHMAGESRINGOFAER",
                 new ItemStack(BaubleItems.aerRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.AIR, 64)
-                    .add(Aspect.MAGIC, 64)
-                    .add(Aspect.AURA, 48)
-                    .add(Aspect.ENERGY, 32),
+                (new AspectList()).add(Aspect.AIR, 32)
+                    .add(Aspect.MAGIC, 32)
+                    .add(Aspect.AURA, 24)
+                    .add(Aspect.ENERGY, 16),
                 new ItemStack(BaubleItems.aerRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -42,10 +42,10 @@ public class InfusionRecipes {
                 "RBARCHMAGESRINGOFTERRA",
                 new ItemStack(BaubleItems.terraRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.EARTH, 64)
-                    .add(Aspect.MAGIC, 64)
-                    .add(Aspect.AURA, 48)
-                    .add(Aspect.ENERGY, 32),
+                (new AspectList()).add(Aspect.EARTH, 32)
+                    .add(Aspect.MAGIC, 32)
+                    .add(Aspect.AURA, 24)
+                    .add(Aspect.ENERGY, 16),
                 new ItemStack(BaubleItems.terraRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
@@ -59,10 +59,10 @@ public class InfusionRecipes {
                 "RBARCHMAGESRINGOFIGNIS",
                 new ItemStack(BaubleItems.ignisRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.FIRE, 64)
-                    .add(Aspect.MAGIC, 64)
-                    .add(Aspect.AURA, 48)
-                    .add(Aspect.ENERGY, 32),
+                (new AspectList()).add(Aspect.FIRE, 32)
+                    .add(Aspect.MAGIC, 32)
+                    .add(Aspect.AURA, 24)
+                    .add(Aspect.ENERGY, 16),
                 new ItemStack(BaubleItems.ignisRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
@@ -76,10 +76,10 @@ public class InfusionRecipes {
                 "RBARCHMAGESRINGOFAQUA",
                 new ItemStack(BaubleItems.aquaRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.WATER, 64)
-                    .add(Aspect.MAGIC, 64)
-                    .add(Aspect.AURA, 48)
-                    .add(Aspect.ENERGY, 32),
+                (new AspectList()).add(Aspect.WATER, 32)
+                    .add(Aspect.MAGIC, 32)
+                    .add(Aspect.AURA, 24)
+                    .add(Aspect.ENERGY, 16),
                 new ItemStack(BaubleItems.aquaRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
@@ -93,10 +93,10 @@ public class InfusionRecipes {
                 "RBARCHMAGESRINGOFORDO",
                 new ItemStack(BaubleItems.ordoRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.ORDER, 64)
-                    .add(Aspect.MAGIC, 64)
-                    .add(Aspect.AURA, 48)
-                    .add(Aspect.ENERGY, 32),
+                (new AspectList()).add(Aspect.ORDER, 32)
+                    .add(Aspect.MAGIC, 32)
+                    .add(Aspect.AURA, 24)
+                    .add(Aspect.ENERGY, 16),
                 new ItemStack(BaubleItems.ordoRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
@@ -110,10 +110,10 @@ public class InfusionRecipes {
                 "RBARCHMAGESRINGOFPERDITIO",
                 new ItemStack(BaubleItems.perditioRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.ORDER, 64)
-                    .add(Aspect.MAGIC, 64)
-                    .add(Aspect.AURA, 48)
-                    .add(Aspect.ENERGY, 32),
+                (new AspectList()).add(Aspect.ORDER, 32)
+                    .add(Aspect.MAGIC, 32)
+                    .add(Aspect.AURA, 24)
+                    .add(Aspect.ENERGY, 16),
                 new ItemStack(BaubleItems.perditioRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
@@ -132,10 +132,10 @@ public class InfusionRecipes {
                 "RBMASTERSRINGOFAER",
                 new ItemStack(BaubleItems.aerRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.AIR, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.AIR, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.aerRing, 1, 1),
                 new ItemStack[] { new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -149,10 +149,10 @@ public class InfusionRecipes {
                 "RBMASTERSRINGOFTERRA",
                 new ItemStack(BaubleItems.terraRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.EARTH, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.EARTH, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.terraRing, 1, 1),
                 new ItemStack[] { new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
@@ -166,10 +166,10 @@ public class InfusionRecipes {
                 "RBMASTERSRINGOFIGNIS",
                 new ItemStack(BaubleItems.ignisRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.FIRE, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.FIRE, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.ignisRing, 1, 1),
                 new ItemStack[] { new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
@@ -183,10 +183,10 @@ public class InfusionRecipes {
                 "RBMASTERSRINGOFAQUA",
                 new ItemStack(BaubleItems.aquaRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.WATER, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.WATER, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.aquaRing, 1, 1),
                 new ItemStack[] { new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
@@ -200,10 +200,10 @@ public class InfusionRecipes {
                 "RBMASTERSRINGOFORDO",
                 new ItemStack(BaubleItems.ordoRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.ORDER, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.ORDER, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.ordoRing, 1, 1),
                 new ItemStack[] { new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
@@ -217,10 +217,10 @@ public class InfusionRecipes {
                 "RBMASTERSRINGOFPERDITIO",
                 new ItemStack(BaubleItems.perditioRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.ORDER, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.ORDER, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.perditioRing, 1, 1),
                 new ItemStack[] { new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
@@ -236,12 +236,12 @@ public class InfusionRecipes {
                 "RBSPELLCASTERSRINGOFTHESKY",
                 new ItemStack(BaubleItems.combinationRing, 1, 0),
                 5,
-                (new AspectList()).add(Aspect.AIR, 256)
-                    .add(Aspect.ORDER, 256)
-                    .add(Aspect.FIRE, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.AIR, 64)
+                    .add(Aspect.ORDER, 64)
+                    .add(Aspect.FIRE, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.aerRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -257,12 +257,12 @@ public class InfusionRecipes {
                 "RBSPELLSLINGERSRINGOFTHEEARTH",
                 new ItemStack(BaubleItems.combinationRing, 1, 3),
                 5,
-                (new AspectList()).add(Aspect.EARTH, 256)
-                    .add(Aspect.ENTROPY, 256)
-                    .add(Aspect.WATER, 256)
-                    .add(Aspect.MAGIC, 256)
-                    .add(Aspect.AURA, 96)
-                    .add(Aspect.ENERGY, 64),
+                (new AspectList()).add(Aspect.EARTH, 64)
+                    .add(Aspect.ENTROPY, 64)
+                    .add(Aspect.WATER, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.terraRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
@@ -278,12 +278,12 @@ public class InfusionRecipes {
                 "RBEXOTICRINGOFTHESKY",
                 new ItemStack(BaubleItems.combinationRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.AIR, 512)
-                    .add(Aspect.ORDER, 512)
-                    .add(Aspect.FIRE, 512)
-                    .add(Aspect.MAGIC, 512)
-                    .add(Aspect.AURA, 192)
-                    .add(Aspect.ENERGY, 128),
+                (new AspectList()).add(Aspect.AIR, 128)
+                    .add(Aspect.ORDER, 128)
+                    .add(Aspect.FIRE, 128)
+                    .add(Aspect.MAGIC, 128)
+                    .add(Aspect.AURA, 96)
+                    .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 0),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -299,12 +299,12 @@ public class InfusionRecipes {
                 "RBEXOTICRINGOFTHEEARTH",
                 new ItemStack(BaubleItems.combinationRing, 1, 4),
                 5,
-                (new AspectList()).add(Aspect.EARTH, 512)
-                    .add(Aspect.ENTROPY, 512)
-                    .add(Aspect.WATER, 512)
-                    .add(Aspect.MAGIC, 512)
-                    .add(Aspect.AURA, 192)
-                    .add(Aspect.ENERGY, 128),
+                (new AspectList()).add(Aspect.EARTH, 128)
+                    .add(Aspect.ENTROPY, 128)
+                    .add(Aspect.WATER, 128)
+                    .add(Aspect.MAGIC, 128)
+                    .add(Aspect.AURA, 96)
+                    .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
@@ -320,12 +320,12 @@ public class InfusionRecipes {
                 "RBRUNEFORGEDRINGOFTHESKY",
                 new ItemStack(BaubleItems.combinationRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.AIR, 1024)
-                    .add(Aspect.ORDER, 1024)
-                    .add(Aspect.FIRE, 1024)
-                    .add(Aspect.MAGIC, 1024)
-                    .add(Aspect.AURA, 384)
-                    .add(Aspect.ENERGY, 256),
+                (new AspectList()).add(Aspect.AIR, 256)
+                    .add(Aspect.ORDER, 256)
+                    .add(Aspect.FIRE, 256)
+                    .add(Aspect.MAGIC, 256)
+                    .add(Aspect.AURA, 192)
+                    .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 1),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -341,12 +341,12 @@ public class InfusionRecipes {
                 "RBRUNEFORGEDRINGOFTHEEARTH",
                 new ItemStack(BaubleItems.combinationRing, 1, 5),
                 5,
-                (new AspectList()).add(Aspect.EARTH, 1024)
-                    .add(Aspect.ENTROPY, 1024)
-                    .add(Aspect.WATER, 1024)
-                    .add(Aspect.MAGIC, 1024)
-                    .add(Aspect.AURA, 384)
-                    .add(Aspect.ENERGY, 256),
+                (new AspectList()).add(Aspect.EARTH, 256)
+                    .add(Aspect.ENTROPY, 256)
+                    .add(Aspect.WATER, 256)
+                    .add(Aspect.MAGIC, 256)
+                    .add(Aspect.AURA, 192)
+                    .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 4),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
@@ -363,15 +363,15 @@ public class InfusionRecipes {
                 "RBTHAUMATURGESRING",
                 new ItemStack(BaubleItems.combinationRing, 1, 6),
                 5,
-                (new AspectList()).add(Aspect.AIR, 2048)
-                    .add(Aspect.ORDER, 2048)
-                    .add(Aspect.FIRE, 2048)
-                    .add(Aspect.EARTH, 2048)
-                    .add(Aspect.ENTROPY, 2048)
-                    .add(Aspect.WATER, 2048)
-                    .add(Aspect.MAGIC, 2048)
-                    .add(Aspect.AURA, 768)
-                    .add(Aspect.ENERGY, 512),
+                (new AspectList()).add(Aspect.AIR, 512)
+                    .add(Aspect.ORDER, 512)
+                    .add(Aspect.FIRE, 512)
+                    .add(Aspect.EARTH, 512)
+                    .add(Aspect.ENTROPY, 512)
+                    .add(Aspect.WATER, 512)
+                    .add(Aspect.MAGIC, 512)
+                    .add(Aspect.AURA, 384)
+                    .add(Aspect.ENERGY, 128),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -385,15 +385,15 @@ public class InfusionRecipes {
                 "RBEXOTICTHAUMATURGESRING",
                 new ItemStack(BaubleItems.combinationRing, 1, 7),
                 5,
-                (new AspectList()).add(Aspect.AIR, 4096)
-                    .add(Aspect.ORDER, 4096)
-                    .add(Aspect.FIRE, 4096)
-                    .add(Aspect.EARTH, 4096)
-                    .add(Aspect.ENTROPY, 4096)
-                    .add(Aspect.WATER, 4096)
-                    .add(Aspect.MAGIC, 4096)
-                    .add(Aspect.AURA, 1536)
-                    .add(Aspect.ENERGY, 1024),
+                (new AspectList()).add(Aspect.AIR, 768)
+                    .add(Aspect.ORDER, 768)
+                    .add(Aspect.FIRE, 768)
+                    .add(Aspect.EARTH, 768)
+                    .add(Aspect.ENTROPY, 768)
+                    .add(Aspect.WATER, 768)
+                    .add(Aspect.MAGIC, 768)
+                    .add(Aspect.AURA, 384)
+                    .add(Aspect.ENERGY, 256),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -407,15 +407,15 @@ public class InfusionRecipes {
                 "RBRUNEFORGEDTHAUMATURGESRING",
                 new ItemStack(BaubleItems.combinationRing, 1, 8),
                 5,
-                (new AspectList()).add(Aspect.AIR, 8192)
-                    .add(Aspect.ORDER, 8192)
-                    .add(Aspect.FIRE, 8192)
-                    .add(Aspect.EARTH, 8192)
-                    .add(Aspect.ENTROPY, 8192)
-                    .add(Aspect.WATER, 8192)
-                    .add(Aspect.MAGIC, 8192)
-                    .add(Aspect.AURA, 3072)
-                    .add(Aspect.ENERGY, 2048),
+                (new AspectList()).add(Aspect.AIR, 1024)
+                    .add(Aspect.ORDER, 1024)
+                    .add(Aspect.FIRE, 1024)
+                    .add(Aspect.EARTH, 1024)
+                    .add(Aspect.ENTROPY, 1024)
+                    .add(Aspect.WATER, 1024)
+                    .add(Aspect.MAGIC, 1024)
+                    .add(Aspect.AURA, 768)
+                    .add(Aspect.ENERGY, 512),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 7),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
