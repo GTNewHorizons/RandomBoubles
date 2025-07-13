@@ -162,6 +162,22 @@ public class RingResearch {
             new ItemStack(BaubleItems.aerRing, 1, 0)).setPages(pages)
                 .setParents("RBAPPRENTICERINGOFAER")
                 .registerResearchItem();
+        // Magician's Ring of Terra
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFTERRA.1"),
+            new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfTerra")), };
+        researchAspects = new AspectList().add(Aspect.EARTH, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 16);
+        getResearchItem(
+            "RBMAGICIANSRINGOFTERRA",
+            "RBRINGS",
+            researchAspects,
+            3,
+            -5,
+            0,
+            new ItemStack(BaubleItems.terraRing, 1, 0)).setPages(pages)
+            .setParents("RBAPPRENTICERINGOFAER")
+            .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,

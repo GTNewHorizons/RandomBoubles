@@ -72,11 +72,16 @@ randomboubles_research_page.RBAPPRENTICERINGOFAER.1=While traveling the world, y
 
 randomboubles_research_name.RBMAGICIANSRINGOFAER=Magician's Air Ring
 randomboubles_research_text.RBMAGICIANSRINGOFAER=A Sliver of Solidifed Air.
-randomboubles_research_page.RBMAGICIANSRINGOFAER.1=By imbuing The ring with even more Air Magic, you have managed to find a way of making the ring even stronger. <BR><BR>Is this really the end...
+randomboubles_research_page.RBMAGICIANSRINGOFAER.1=By imbuing The ring with even more Air Magic, you have managed to find a way of making the ring even stronger. <BR><BR>There must exist other ways of making the ring even more powerful...
 
 randomboubles_research_name.RBAPPRENTICERINGOFTERRA=A Ring of Earth
 randomboubles_research_text.RBAPPRENTICERINGOFTERRA=A Circle of Solid Earth Magic.
 randomboubles_research_page.RBAPPRENTICERINGOFTERRA.1=While traveling the world, you have found a Ring that seems to have a high affinity with Earth Magic. <BR>There must exist more rings that have different affinites.<BR><BR>I wonder what would happen if i researched them all...
+
+randomboubles_research_name.RBMAGICIANSRINGOFAER=Magician's Earth Ring
+randomboubles_research_text.RBMAGICIANSRINGOFAER=A Sliver of Solidifed Earth.
+randomboubles_research_page.RBMAGICIANSRINGOFAER.1=By imbuing The ring with even more Earth Magic, you have managed to find a way of making the ring even stronger. <BR><BR>There must exist other ways of making the ring even more powerful...
+
 
 randomboubles_research_name.RBAPPRENTICERINGOFIGNIS=A Ring of Fire
 randomboubles_research_text.RBAPPRENTICERINGOFIGNIS=A Circle of Solid Fire Magic.
