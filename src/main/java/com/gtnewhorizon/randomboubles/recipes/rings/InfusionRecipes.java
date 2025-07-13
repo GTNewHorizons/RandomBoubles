@@ -27,7 +27,7 @@ public class InfusionRecipes {
             ThaumcraftApi.addInfusionCraftingRecipe(
                 "RBARCHMAGESRINGOFAER",
                 new ItemStack(BaubleItems.aerRing, 1, 1),
-                4,
+                5,
                 (new AspectList()).add(Aspect.AIR, 64)
                     .add(Aspect.MAGIC, 64)
                     .add(Aspect.AURA, 48)
@@ -36,9 +36,9 @@ public class InfusionRecipes {
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), new ItemStack(ConfigItems.itemResource, 1, 14),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), new ItemStack(ConfigItems.itemResource, 1, 14),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), new ItemStack(ConfigBlocks.blockCrystal, 1, 0),
-                    new ItemStack(ConfigItems.itemResource, 1, 14), new ItemStack(ConfigBlocks.blockCrystal, 1, 0),
-                    new ItemStack(ConfigItems.itemResource, 1, 14) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
 
     }
 }

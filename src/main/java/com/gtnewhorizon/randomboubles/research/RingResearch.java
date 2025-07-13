@@ -244,7 +244,7 @@ public class RingResearch {
                 .setParents("RBAPPRENTICERINGOFPERDITIO", "RBAPPRENTICERINGOFAQUA", "RBAPPRENTICERINGOFIGNIS")
                 .registerResearchItem();
 
-        // Magician's Ring of Aer
+        // Archmage's Ring of Aer
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFAER.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfAer")), };
         researchAspects = new AspectList().add(Aspect.AIR, 16)
