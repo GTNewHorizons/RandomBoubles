@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.gtnewhorizon.randomboubles.recipes.rings.ArcaneRecipes;
+import com.gtnewhorizon.randomboubles.recipes.rings.InfusionRecipes;
 import com.gtnewhorizon.randomboubles.research.RingResearch;
 
 import cpw.mods.fml.common.Loader;
@@ -34,6 +35,7 @@ public class RandomBoubles {
         if (Loader.isModLoaded("Thaumcraft")) {
             RingResearch.setupResearchPage();
             ArcaneRecipes.registerArcaneRings();
+            InfusionRecipes.registerArcaneRingsInfusions();
             RingResearch.registerResearch();
         }
     }

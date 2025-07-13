@@ -12,6 +12,7 @@ import com.gtnewhorizon.randomboubles.util.research.RBResearchItem;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchPage;
@@ -160,7 +161,7 @@ public class RingResearch {
             -5,
             0,
             new ItemStack(BaubleItems.aerRing, 1, 0)).setPages(pages)
-                .setParents("RBAPPRENTICERINGOFAER")
+                .setParents("RBAPPRENTICERINGOFAER", "RBAPPRENTICERINGOFORDO", "RBAPPRENTICERINGOFAQUA")
                 .registerResearchItem();
         // Magician's Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFTERRA.1"),
@@ -176,8 +177,89 @@ public class RingResearch {
             -5,
             0,
             new ItemStack(BaubleItems.terraRing, 1, 0)).setPages(pages)
-            .setParents("RBAPPRENTICERINGOFAER")
-            .registerResearchItem();
+                .setParents("RBAPPRENTICERINGOFTERRA", "RBAPPRENTICERINGOFORDO", "RBAPPRENTICERINGOFIGNIS")
+                .registerResearchItem();
+        // Magician's Ring of Ignis
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFIGNIS.1"),
+            new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfIgnis")), };
+        researchAspects = new AspectList().add(Aspect.FIRE, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 16);
+        getResearchItem(
+            "RBMAGICIANSRINGOFIGNIS",
+            "RBRINGS",
+            researchAspects,
+            3,
+            1,
+            0,
+            new ItemStack(BaubleItems.ignisRing, 1, 0)).setPages(pages)
+                .setParents("RBAPPRENTICERINGOFIGNIS", "RBAPPRENTICERINGOFTERRA", "RBAPPRENTICERINGOFPERDITIO")
+                .registerResearchItem();
+        // Magician's Ring of Aqua
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFAQUA.1"),
+            new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfAqua")), };
+        researchAspects = new AspectList().add(Aspect.WATER, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 16);
+        getResearchItem(
+            "RBMAGICIANSRINGOFAQUA",
+            "RBRINGS",
+            researchAspects,
+            -3,
+            1,
+            0,
+            new ItemStack(BaubleItems.aquaRing, 1, 0)).setPages(pages)
+                .setParents("RBAPPRENTICERINGOFAQUA", "RBAPPRENTICERINGOFAER", "RBAPPRENTICERINGOFPERDITIO")
+                .registerResearchItem();
+        // Magician's Ring of Ordo
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFORDO.1"),
+            new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfOrdo")), };
+        researchAspects = new AspectList().add(Aspect.ORDER, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 16);
+        getResearchItem(
+            "RBMAGICIANSRINGOFORDO",
+            "RBRINGS",
+            researchAspects,
+            0,
+            -6,
+            0,
+            new ItemStack(BaubleItems.ordoRing, 1, 0)).setPages(pages)
+                .setParents("RBAPPRENTICERINGOFORDO", "RBAPPRENTICERINGOFAER", "RBAPPRENTICERINGOFTERRA")
+                .registerResearchItem();
+        // Magician's Ring of Perditio
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFPERDITIO.1"),
+            new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfPerditio")), };
+        researchAspects = new AspectList().add(Aspect.ENTROPY, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 16);
+        getResearchItem(
+            "RBMAGICIANSRINGOFPERDITIO",
+            "RBRINGS",
+            researchAspects,
+            0,
+            2,
+            0,
+            new ItemStack(BaubleItems.perditioRing, 1, 0)).setPages(pages)
+                .setParents("RBAPPRENTICERINGOFPERDITIO", "RBAPPRENTICERINGOFAQUA", "RBAPPRENTICERINGOFIGNIS")
+                .registerResearchItem();
+
+        // Magician's Ring of Aer
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFAER.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfAer")), };
+        researchAspects = new AspectList().add(Aspect.AIR, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 32);
+        getResearchItem(
+            "RBARCHMAGESRINGOFAER",
+            "RBRINGS",
+            researchAspects,
+            -2,
+            -4,
+            0,
+            new ItemStack(BaubleItems.aerRing, 1, 1)).setPages(pages)
+                .setParents("RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFAQUA", "INFUSION")
+                .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,
