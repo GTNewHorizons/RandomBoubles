@@ -16,6 +16,7 @@ import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchPage;
+import thaumcraft.common.config.ConfigBlocks;
 import thaumcraft.common.config.ConfigItems;
 
 public class RingResearch {
@@ -440,6 +441,34 @@ public class RingResearch {
             0,
             new ItemStack(BaubleItems.perditioRing, 1, 2)).setPages(pages)
                 .setParents("RBARCHMAGESRINGOFPERDITIO", "RBARCHMAGESRINGOFIGNIS", "RBARCHMAGESRINGOFAQUA", "PRIMPEARL")
+                .registerResearchItem();
+
+        // Mastering the Elements
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTEROFTHEELEMENTALRINGS.1") };
+        researchAspects = new AspectList().add(Aspect.AIR, 32)
+            .add(Aspect.EARTH, 32)
+            .add(Aspect.FIRE, 32)
+            .add(Aspect.WATER, 32)
+            .add(Aspect.ORDER, 32)
+            .add(Aspect.ENTROPY, 32)
+            .add(Aspect.MAGIC, 64)
+            .add(Aspect.AURA, 64);
+        getResearchItem(
+            "RBMASTEROFTHEELEMENTALRINGS",
+            "RBRINGS",
+            researchAspects,
+            0,
+            -2,
+            0,
+            new ItemStack(ConfigBlocks.blockCrystal, 1, 6)).setRound()
+                .setParents(
+                    "RBMASTERSRINGOFAER",
+                    "RBMASTERSRINGOFORDO",
+                    "RBMASTERSRINGOFTERRA",
+                    "RBMASTERSRINGOFIGNIS",
+                    "RBMASTERSRINGOFPERDITIO",
+                    "RBMASTERSRINGOFAQUA")
+                .setPages(pages)
                 .registerResearchItem();
     }
 
