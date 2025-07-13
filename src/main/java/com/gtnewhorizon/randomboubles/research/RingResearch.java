@@ -645,6 +645,46 @@ public class RingResearch {
                 .setParents("RBRUNEFORGEDRINGOFTHESKY", "RBRUNEFORGEDRINGOFTHEEARTH", "RBTHEORYRINGOFCOMBINATIONS")
                 .setPages(pages)
                 .registerResearchItem();
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBEXOTICTHAUMATURGESRING.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBExoticThaumaturgesRing")) };
+        researchAspects = new AspectList().add(Aspect.EARTH, 128)
+            .add(Aspect.AIR, 128)
+            .add(Aspect.EARTH, 128)
+            .add(Aspect.WATER, 128)
+            .add(Aspect.ORDER, 128)
+            .add(Aspect.ENTROPY, 128)
+            .add(Aspect.MAGIC, 128)
+            .add(Aspect.AURA, 128);
+        getResearchItem(
+            "RBEXOTICTHAUMATURGESRING",
+            "RBRINGS",
+            researchAspects,
+            -8,
+            -3,
+            0,
+            new ItemStack(BaubleItems.combinationRing, 1, 6)).setParents("RBTHAUMATURGESRING")
+                .setPages(pages)
+                .registerResearchItem();
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBRUNEFORGEDTHAUMATURGESRING.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBRuneforgedThaumaturgesRing")) };
+        researchAspects = new AspectList().add(Aspect.EARTH, 256)
+            .add(Aspect.AIR, 256)
+            .add(Aspect.EARTH, 256)
+            .add(Aspect.WATER, 256)
+            .add(Aspect.ORDER, 256)
+            .add(Aspect.ENTROPY, 256)
+            .add(Aspect.MAGIC, 256)
+            .add(Aspect.AURA, 256);
+        getResearchItem(
+            "RBRUNEFORGEDTHAUMATURGESRING",
+            "RBRINGS",
+            researchAspects,
+            -8,
+            -1,
+            0,
+            new ItemStack(BaubleItems.combinationRing, 1, 6)).setParents("RBEXOTICTHAUMATURGESRING")
+                .setPages(pages)
+                .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,
