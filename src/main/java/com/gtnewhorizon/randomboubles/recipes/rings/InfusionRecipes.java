@@ -91,6 +91,40 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2) }));
+        RingResearch.recipeList.put(
+            "RBArchmagesRingOfOrdo",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBARCHMAGESRINGOFORDO",
+                new ItemStack(BaubleItems.ordoRing, 1, 1),
+                5,
+                (new AspectList()).add(Aspect.ORDER, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
+                new ItemStack(BaubleItems.ordoRing, 1, 0),
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4) }));
+        RingResearch.recipeList.put(
+            "RBArchmagesRingOfPerditio",
+            ThaumcraftApi.addInfusionCraftingRecipe(
+                "RBARCHMAGESRINGOFPERDITIO",
+                new ItemStack(BaubleItems.perditioRing, 1, 1),
+                5,
+                (new AspectList()).add(Aspect.ORDER, 64)
+                    .add(Aspect.MAGIC, 64)
+                    .add(Aspect.AURA, 48)
+                    .add(Aspect.ENERGY, 32),
+                new ItemStack(BaubleItems.perditioRing, 1, 0),
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5) }));
 
     }
 }

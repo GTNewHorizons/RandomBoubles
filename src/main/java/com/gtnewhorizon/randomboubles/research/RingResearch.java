@@ -308,6 +308,38 @@ public class RingResearch {
             new ItemStack(BaubleItems.aquaRing, 1, 1)).setPages(pages)
                 .setParents("RBMAGICIANSRINGOFAQUA", "RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFPERDITIO", "INFUSION")
                 .registerResearchItem();
+        // Archmage's Ring of Ordo
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFORDO.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfOrdo")), };
+        researchAspects = new AspectList().add(Aspect.ORDER, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 32);
+        getResearchItem(
+            "RBARCHMAGESRINGOFORDO",
+            "RBRINGS",
+            researchAspects,
+            0,
+            -5,
+            0,
+            new ItemStack(BaubleItems.ordoRing, 1, 1)).setPages(pages)
+                .setParents("RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFTERRA", "INFUSION")
+                .registerResearchItem();
+        // Archmage's Ring of Ordo
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFPERDITIO.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfPerditio")), };
+        researchAspects = new AspectList().add(Aspect.ENTROPY, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 32);
+        getResearchItem(
+            "RBARCHMAGESRINGOFPERDITIO",
+            "RBRINGS",
+            researchAspects,
+            0,
+            1,
+            0,
+            new ItemStack(BaubleItems.perditioRing, 1, 1)).setPages(pages)
+                .setParents("RBMAGICIANSRINGOFPERDITIO", "RBMAGICIANSRINGOFIGNIS", "RBMAGICIANSRINGOFAQUA", "INFUSION")
+                .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,
