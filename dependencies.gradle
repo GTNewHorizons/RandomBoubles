@@ -4,5 +4,7 @@ dependencies {
 
     implementation("thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev")
 
+    compileOnly('com.github.GTNewHorizons:ThaumicBases:1.8.11:dev') {transitive=false}
+
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.7.62-GTNH:dev")
 }

@@ -6,6 +6,7 @@ import com.gtnewhorizon.randomboubles.BaubleItems;
 import com.gtnewhorizon.randomboubles.research.RingResearch;
 
 import cpw.mods.fml.common.Loader;
+import tb.init.TBBlocks;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
@@ -16,10 +17,10 @@ public class InfusionRecipes {
 
     public static void registerArcaneRingsInfusions() {
 
-        String thaumium = "ingotThaumium";
+        ItemStack salisMundus = new ItemStack(ConfigItems.itemResource, 1, 14);
 
-        if (Loader.isModLoaded("Gregtech")) {
-            thaumium = "plateThaumium";
+        if (Loader.isModLoaded("thaumicbases")) {
+            salisMundus = new ItemStack(TBBlocks.dustBlock, 1, 0);
         }
 
         RingResearch.recipeList.put(
@@ -34,10 +35,10 @@ public class InfusionRecipes {
                     .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.aerRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), new ItemStack(ConfigItems.itemResource, 1, 14),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), new ItemStack(ConfigItems.itemResource, 1, 14),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), new ItemStack(ConfigItems.itemResource, 1, 14),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
         RingResearch.recipeList.put(
             "RBArchmagesRingOfTerra",
@@ -51,10 +52,10 @@ public class InfusionRecipes {
                     .add(Aspect.ENERGY, 32),
                 new ItemStack(BaubleItems.terraRing, 1, 0),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigItems.itemResource, 1, 14),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigItems.itemResource, 1, 14),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), new ItemStack(ConfigItems.itemResource, 1, 14),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigItems.itemResource, 1, 14),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1) }));
 
     }
