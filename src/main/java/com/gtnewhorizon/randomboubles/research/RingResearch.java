@@ -1,20 +1,25 @@
 package com.gtnewhorizon.randomboubles.research;
 
+import java.util.HashMap;
+
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 
+import com.gtnewhorizon.randomboubles.BaubleItems;
 import com.gtnewhorizon.randomboubles.RandomBoubles;
 import com.gtnewhorizon.randomboubles.util.research.RBResearchItem;
 
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
+import thaumcraft.api.crafting.ShapedArcaneRecipe;
 import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchPage;
 import thaumcraft.common.config.ConfigItems;
 
 public class RingResearch {
 
+    public static HashMap<String, Object> recipeList = new HashMap<>();
     public static final ResourceLocation rbThaumRing = new ResourceLocation(
         RandomBoubles.MODID + ":textures/misc/Thaum_Ring.png");
 
@@ -52,8 +57,8 @@ public class RingResearch {
             "RBAPPRENTICERINGOFAER",
             "RBRINGS",
             researchAspects,
-            0,
-            -5,
+            -4,
+            -6,
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 3)).setRound()
                 .setHidden()
@@ -68,8 +73,8 @@ public class RingResearch {
             "RBAPPRENTICERINGOFTERRA",
             "RBRINGS",
             researchAspects,
-            2,
-            -4,
+            4,
+            -6,
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 4)).setRound()
                 .setHidden()
@@ -84,8 +89,8 @@ public class RingResearch {
             "RBAPPRENTICERINGOFIGNIS",
             "RBRINGS",
             researchAspects,
-            3,
-            -2,
+            4,
+            2,
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 5)).setRound()
                 .setHidden()
@@ -100,8 +105,8 @@ public class RingResearch {
             "RBAPPRENTICERINGOFAQUA",
             "RBRINGS",
             researchAspects,
+            -4,
             2,
-            0,
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 6)).setRound()
                 .setHidden()
@@ -117,7 +122,7 @@ public class RingResearch {
             "RBRINGS",
             researchAspects,
             0,
-            1,
+            -7,
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 7)).setRound()
                 .setHidden()
@@ -132,8 +137,8 @@ public class RingResearch {
             "RBAPPRENTICERINGOFPERDITIO",
             "RBRINGS",
             researchAspects,
-            -2,
             0,
+            3,
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 8)).setRound()
                 .setHidden()
@@ -141,6 +146,22 @@ public class RingResearch {
                 .setPages(pages)
                 .registerResearchItem();
 
+        // Magician's Ring of Aer
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFAER.1"),
+            new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfAer")), };
+        researchAspects = new AspectList().add(Aspect.AIR, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 16);
+        getResearchItem(
+            "RBMAGICIANSRINGOFAER",
+            "RBRINGS",
+            researchAspects,
+            -3,
+            -5,
+            0,
+            new ItemStack(BaubleItems.aerRing, 1, 0)).setPages(pages)
+                .setParents("RBAPPRENTICERINGOFAER")
+                .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,
