@@ -532,13 +532,12 @@ public class RingResearch {
             new ItemStack(BaubleItems.combinationRing, 1, 0)).setParents("RBTHEORYRINGOFCOMBINATIONS")
                 .setPages(pages)
                 .registerResearchItem();
-
-        // Spellcaster's Ring of the Sky
+        // Spellslinger's Ring of the Earth
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBSpellslingersRingoftheEarth")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 16)
             .add(Aspect.WATER, 16)
-            .add(Aspect.ORDER, 16)
+            .add(Aspect.ENTROPY, 16)
             .add(Aspect.MAGIC, 32)
             .add(Aspect.AURA, 32);
         getResearchItem(
@@ -549,6 +548,30 @@ public class RingResearch {
             -1,
             0,
             new ItemStack(BaubleItems.combinationRing, 1, 3)).setParents("RBTHEORYRINGOFCOMBINATIONS")
+                .setPages(pages)
+                .registerResearchItem();
+
+        
+        // Thaumaturge's Ring
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBTHAUMATURGESRING.1"),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing")) };
+        researchAspects = new AspectList().add(Aspect.EARTH, 16)
+            .add(Aspect.AIR, 16)
+            .add(Aspect.EARTH, 16)
+            .add(Aspect.WATER, 16)
+            .add(Aspect.ORDER, 16)
+            .add(Aspect.ENTROPY, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 32);
+        getResearchItem(
+            "RBTHAUMATURGESRING",
+            "RBRINGS",
+            researchAspects,
+            -6,
+            -2,
+            0,
+            new ItemStack(BaubleItems.combinationRing, 1, 6))
+                .setParents("RBSPELLCASTERSRINGOFTHESKY", "RBSPELLSLINGERSRINGOFTHEEARTH", "RBTHEORYRINGOFCOMBINATIONS") // TODO: Replace with the final variants of the above research.
                 .setPages(pages)
                 .registerResearchItem();
     }
