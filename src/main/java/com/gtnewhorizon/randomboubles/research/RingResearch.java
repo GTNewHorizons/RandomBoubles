@@ -488,10 +488,31 @@ public class RingResearch {
             -2,
             0,
             new ItemStack(BaubleItems.combinationRing, 1, 6)).setRound()
-            .setParents(
-                "RBMASTEROFTHEELEMENTALRINGS")
-            .setPages(pages)
-            .registerResearchItem();
+                .setParents("RBMASTEROFTHEELEMENTALRINGS")
+                .setPages(pages)
+                .registerResearchItem();
+        // Ring of Magical Protection
+        pages = new ResearchPage[] {
+            new ResearchPage("randomboubles_research_page.RBTHEORYRINGOFMAGICALPROTECTION.1") };
+        researchAspects = new AspectList().add(Aspect.AIR, 32)
+            .add(Aspect.EARTH, 32)
+            .add(Aspect.FIRE, 32)
+            .add(Aspect.WATER, 32)
+            .add(Aspect.ORDER, 32)
+            .add(Aspect.ENTROPY, 32)
+            .add(Aspect.MAGIC, 64)
+            .add(Aspect.AURA, 64);
+        getResearchItem(
+            "RBTHEORYRINGOFMAGICALPROTECTION",
+            "RBRINGS",
+            researchAspects,
+            4,
+            -2,
+            0,
+            new ResourceLocation("thaumcraft", "textures/misc/r_runicupg.png")).setRound()
+                .setParents("RBMASTEROFTHEELEMENTALRINGS", "RUNICARMOR")
+                .setPages(pages)
+                .registerResearchItem();
     }
 
     private static RBResearchItem getResearchItem(String tag, String category, AspectList researchAspects, int xPos,
