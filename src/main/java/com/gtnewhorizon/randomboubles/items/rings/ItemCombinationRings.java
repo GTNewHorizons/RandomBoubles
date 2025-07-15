@@ -178,9 +178,13 @@ public class ItemCombinationRings extends ItemBaubleRingBase {
             EntityPlayer tPlayer = (EntityPlayer) pEntity;
             InventoryBaubles tBaubles = PlayerHandler.getPlayerBaubles(tPlayer);
 
-            Potion tPot = Potion.wither;
-            if (tPlayer.isPotionActive(tPot)) {
-                tPlayer.removePotionEffect(tPot.id);
+            Potion tPot1 = Potion.wither;
+            Potion tPot2 = Potion.poison;
+            if (tPlayer.isPotionActive(tPot1)) {
+                tPlayer.removePotionEffect(tPot1.id);
+            }
+            if (tPlayer.isPotionActive(tPot2)) {
+                tPlayer.removePotionEffect(tPot2.id);
             }
         }
 

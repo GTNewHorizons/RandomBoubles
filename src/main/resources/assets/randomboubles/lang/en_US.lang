@@ -62,7 +62,7 @@ item.combinationRing.7.discount=6
 item.combinationRing.8.name=Runeforged Thaumaturge's Ring
 item.combinationRing.8.discount=10
 
-item.combinationRing.cure=Grants Wither Protection
+item.combinationRing.cure=Grants Wither and Poison Protection
 
 #Thaumcraft Research
 tc.research_category.RBRINGS=Random Boubles
