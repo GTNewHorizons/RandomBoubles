@@ -64,7 +64,8 @@ public class RingResearch {
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 3)).setRound()
                 .setHidden()
-                .setItemTriggers(new ItemStack[] { new ItemStack(ConfigItems.itemBaubleBlanks, 1, 3) })
+                .setItemTriggers(new ItemStack(ConfigItems.itemBaubleBlanks, 1, 3))
+                .setAutoUnlock()
                 .setPages(pages)
                 .registerResearchItem();
         // Apprentice Ring of Terra
@@ -80,7 +81,8 @@ public class RingResearch {
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 4)).setRound()
                 .setHidden()
-                .setItemTriggers(new ItemStack[] { new ItemStack(ConfigItems.itemBaubleBlanks, 1, 4) })
+                .setItemTriggers(new ItemStack(ConfigItems.itemBaubleBlanks, 1, 4))
+                .setAutoUnlock()
                 .setPages(pages)
                 .registerResearchItem();
         // Apprentice Ring of Ignis
@@ -96,7 +98,8 @@ public class RingResearch {
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 5)).setRound()
                 .setHidden()
-                .setItemTriggers(new ItemStack[] { new ItemStack(ConfigItems.itemBaubleBlanks, 1, 5) })
+                .setItemTriggers(new ItemStack(ConfigItems.itemBaubleBlanks, 1, 5))
+                .setAutoUnlock()
                 .setPages(pages)
                 .registerResearchItem();
         // Apprentice Ring of Aqua
@@ -112,7 +115,8 @@ public class RingResearch {
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 6)).setRound()
                 .setHidden()
-                .setItemTriggers(new ItemStack[] { new ItemStack(ConfigItems.itemBaubleBlanks, 1, 6) })
+                .setItemTriggers(new ItemStack(ConfigItems.itemBaubleBlanks, 1, 6))
+                .setAutoUnlock()
                 .setPages(pages)
                 .registerResearchItem();
         // Apprentice Ring of Ordo
@@ -128,7 +132,8 @@ public class RingResearch {
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 7)).setRound()
                 .setHidden()
-                .setItemTriggers(new ItemStack[] { new ItemStack(ConfigItems.itemBaubleBlanks, 1, 7) })
+                .setItemTriggers(new ItemStack(ConfigItems.itemBaubleBlanks, 1, 7))
+                .setAutoUnlock()
                 .setPages(pages)
                 .registerResearchItem();
         // Apprentice Ring of Perditio
@@ -144,7 +149,8 @@ public class RingResearch {
             0,
             new ItemStack(ConfigItems.itemBaubleBlanks, 1, 8)).setRound()
                 .setHidden()
-                .setItemTriggers(new ItemStack[] { new ItemStack(ConfigItems.itemBaubleBlanks, 1, 8) })
+                .setItemTriggers(new ItemStack(ConfigItems.itemBaubleBlanks, 1, 8))
+                .setAutoUnlock()
                 .setPages(pages)
                 .registerResearchItem();
 
@@ -162,7 +168,7 @@ public class RingResearch {
             -5,
             0,
             new ItemStack(BaubleItems.aerRing, 1, 0)).setPages(pages)
-                .setParents("RBAPPRENTICERINGOFAER", "RBAPPRENTICERINGOFORDO", "RBAPPRENTICERINGOFAQUA")
+                .setParents("RBAPPRENTICERINGOFAER")
                 .registerResearchItem();
         // Magician's Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFTERRA.1"),
@@ -178,7 +184,7 @@ public class RingResearch {
             -5,
             0,
             new ItemStack(BaubleItems.terraRing, 1, 0)).setPages(pages)
-                .setParents("RBAPPRENTICERINGOFTERRA", "RBAPPRENTICERINGOFORDO", "RBAPPRENTICERINGOFIGNIS")
+                .setParents("RBAPPRENTICERINGOFTERRA")
                 .registerResearchItem();
         // Magician's Ring of Ignis
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFIGNIS.1"),
@@ -194,7 +200,7 @@ public class RingResearch {
             1,
             0,
             new ItemStack(BaubleItems.ignisRing, 1, 0)).setPages(pages)
-                .setParents("RBAPPRENTICERINGOFIGNIS", "RBAPPRENTICERINGOFTERRA", "RBAPPRENTICERINGOFPERDITIO")
+                .setParents("RBAPPRENTICERINGOFIGNIS")
                 .registerResearchItem();
         // Magician's Ring of Aqua
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFAQUA.1"),
@@ -210,7 +216,7 @@ public class RingResearch {
             1,
             0,
             new ItemStack(BaubleItems.aquaRing, 1, 0)).setPages(pages)
-                .setParents("RBAPPRENTICERINGOFAQUA", "RBAPPRENTICERINGOFAER", "RBAPPRENTICERINGOFPERDITIO")
+                .setParents("RBAPPRENTICERINGOFAQUA")
                 .registerResearchItem();
         // Magician's Ring of Ordo
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFORDO.1"),
@@ -226,7 +232,7 @@ public class RingResearch {
             -6,
             0,
             new ItemStack(BaubleItems.ordoRing, 1, 0)).setPages(pages)
-                .setParents("RBAPPRENTICERINGOFORDO", "RBAPPRENTICERINGOFAER", "RBAPPRENTICERINGOFTERRA")
+                .setParents("RBAPPRENTICERINGOFORDO")
                 .registerResearchItem();
         // Magician's Ring of Perditio
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFPERDITIO.1"),
@@ -242,7 +248,7 @@ public class RingResearch {
             2,
             0,
             new ItemStack(BaubleItems.perditioRing, 1, 0)).setPages(pages)
-                .setParents("RBAPPRENTICERINGOFPERDITIO", "RBAPPRENTICERINGOFAQUA", "RBAPPRENTICERINGOFIGNIS")
+                .setParents("RBAPPRENTICERINGOFPERDITIO")
                 .registerResearchItem();
 
         // Archmage's Ring of Aer
@@ -259,7 +265,7 @@ public class RingResearch {
             -4,
             0,
             new ItemStack(BaubleItems.aerRing, 1, 1)).setPages(pages)
-                .setParents("RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFAQUA", "INFUSION")
+                .setParents("RBMAGICIANSRINGOFAER", "INFUSION")
                 .registerResearchItem();
         // Archmage's Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFTERRA.1"),
@@ -275,7 +281,7 @@ public class RingResearch {
             -4,
             0,
             new ItemStack(BaubleItems.terraRing, 1, 1)).setPages(pages)
-                .setParents("RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFTERRA", "RBMAGICIANSRINGOFIGNIS", "INFUSION")
+                .setParents("RBMAGICIANSRINGOFTERRA", "INFUSION")
                 .registerResearchItem();
         // Archmage's Ring of Ignis
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFIGNIS.1"),
@@ -291,7 +297,7 @@ public class RingResearch {
             0,
             0,
             new ItemStack(BaubleItems.ignisRing, 1, 1)).setPages(pages)
-                .setParents("RBMAGICIANSRINGOFIGNIS", "RBMAGICIANSRINGOFTERRA", "RBMAGICIANSRINGOFPERDITIO", "INFUSION")
+                .setParents("RBMAGICIANSRINGOFIGNIS", "INFUSION")
                 .registerResearchItem();
         // Archmage's Ring of Aqua
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFAQUA.1"),
@@ -307,7 +313,7 @@ public class RingResearch {
             0,
             0,
             new ItemStack(BaubleItems.aquaRing, 1, 1)).setPages(pages)
-                .setParents("RBMAGICIANSRINGOFAQUA", "RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFPERDITIO", "INFUSION")
+                .setParents("RBMAGICIANSRINGOFAQUA", "INFUSION")
                 .registerResearchItem();
         // Archmage's Ring of Ordo
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFORDO.1"),
@@ -323,7 +329,7 @@ public class RingResearch {
             -5,
             0,
             new ItemStack(BaubleItems.ordoRing, 1, 1)).setPages(pages)
-                .setParents("RBMAGICIANSRINGOFORDO", "RBMAGICIANSRINGOFAER", "RBMAGICIANSRINGOFTERRA", "INFUSION")
+                .setParents("RBMAGICIANSRINGOFORDO", "INFUSION")
                 .registerResearchItem();
         // Archmage's Ring of Perditio
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFPERDITIO.1"),
@@ -339,7 +345,7 @@ public class RingResearch {
             1,
             0,
             new ItemStack(BaubleItems.perditioRing, 1, 1)).setPages(pages)
-                .setParents("RBMAGICIANSRINGOFPERDITIO", "RBMAGICIANSRINGOFIGNIS", "RBMAGICIANSRINGOFAQUA", "INFUSION")
+                .setParents("RBMAGICIANSRINGOFPERDITIO", "INFUSION")
                 .registerResearchItem();
 
         // Master's Ring of Aer
@@ -356,7 +362,7 @@ public class RingResearch {
             -3,
             0,
             new ItemStack(BaubleItems.aerRing, 1, 2)).setPages(pages)
-                .setParents("RBARCHMAGESRINGOFAER", "RBARCHMAGESRINGOFORDO", "RBARCHMAGESRINGOFAQUA", "PRIMPEARL")
+                .setParents("RBARCHMAGESRINGOFAER", "PRIMPEARL")
                 .registerResearchItem();
         // Master's Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFTERRA.1"),
@@ -372,7 +378,7 @@ public class RingResearch {
             -3,
             0,
             new ItemStack(BaubleItems.terraRing, 1, 2)).setPages(pages)
-                .setParents("RBARCHMAGESRINGOFORDO", "RBARCHMAGESRINGOFTERRA", "RBARCHMAGESRINGOFIGNIS", "PRIMPEARL")
+                .setParents("RBARCHMAGESRINGOFTERRA", "PRIMPEARL")
                 .registerResearchItem();
         // Master's Ring of Ignis
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFIGNIS.1"),
@@ -388,11 +394,7 @@ public class RingResearch {
             -1,
             0,
             new ItemStack(BaubleItems.ignisRing, 1, 2)).setPages(pages)
-                .setParents(
-                    "RBARCHMAGESRINGOFIGNIS",
-                    "RBARCHMAGESRINGOFTERRA",
-                    "RBARCHMAGESRINGOFPERDITIO",
-                    "PRIMPEARL")
+                .setParents("RBARCHMAGESRINGOFIGNIS", "PRIMPEARL")
                 .registerResearchItem();
         // Master's Ring of Aqua
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFAQUA.1"),
@@ -408,7 +410,7 @@ public class RingResearch {
             -1,
             0,
             new ItemStack(BaubleItems.aquaRing, 1, 2)).setPages(pages)
-                .setParents("RBARCHMAGESRINGOFAQUA", "RBARCHMAGESRINGOFAER", "RBARCHMAGESRINGOFPERDITIO", "PRIMPEARL")
+                .setParents("RBARCHMAGESRINGOFAQUA", "PRIMPEARL")
                 .registerResearchItem();
         // Master's Ring of Ordo
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFORDO.1"),
@@ -424,7 +426,7 @@ public class RingResearch {
             -4,
             0,
             new ItemStack(BaubleItems.ordoRing, 1, 2)).setPages(pages)
-                .setParents("RBARCHMAGESRINGOFORDO", "RBARCHMAGESRINGOFAER", "RBARCHMAGESRINGOFTERRA", "PRIMPEARL")
+                .setParents("RBARCHMAGESRINGOFORDO", "PRIMPEARL")
                 .registerResearchItem();
         // Master's Ring of Perditio
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFPERDITIO.1"),
@@ -440,7 +442,7 @@ public class RingResearch {
             0,
             0,
             new ItemStack(BaubleItems.perditioRing, 1, 2)).setPages(pages)
-                .setParents("RBARCHMAGESRINGOFPERDITIO", "RBARCHMAGESRINGOFIGNIS", "RBARCHMAGESRINGOFAQUA", "PRIMPEARL")
+                .setParents("RBARCHMAGESRINGOFPERDITIO", "PRIMPEARL")
                 .registerResearchItem();
 
         // Master of the Elemental Rings
@@ -511,6 +513,7 @@ public class RingResearch {
             0,
             new ResourceLocation("thaumcraft", "textures/misc/r_runicupg.png")).setRound()
                 .setParents("RBMASTEROFTHEELEMENTALRINGS", "RUNICARMOR")
+                .setAutoUnlock()
                 .setPages(pages)
                 .registerResearchItem();
 
