@@ -1,13 +1,13 @@
 package com.gtnewhorizon.randomboubles.recipes.rings;
 
-import com.gtnewhorizon.randomboubles.util.Constants;
-import flaxbeard.thaumicexploration.ThaumicExploration;
 import net.minecraft.item.ItemStack;
 
 import com.gtnewhorizon.randomboubles.BaubleItems;
 import com.gtnewhorizon.randomboubles.research.RingResearch;
+import com.gtnewhorizon.randomboubles.util.Constants;
 
 import cpw.mods.fml.common.Loader;
+import flaxbeard.thaumicexploration.ThaumicExploration;
 import tb.init.TBBlocks;
 import thaumcraft.api.ThaumcraftApi;
 import thaumcraft.api.aspects.Aspect;

@@ -1,12 +1,12 @@
 package com.gtnewhorizon.randomboubles;
 
-import com.gtnewhorizon.randomboubles.util.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.gtnewhorizon.randomboubles.recipes.rings.ArcaneRecipes;
 import com.gtnewhorizon.randomboubles.recipes.rings.InfusionRecipes;
 import com.gtnewhorizon.randomboubles.research.RingResearch;
+import com.gtnewhorizon.randomboubles.util.Constants;
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
