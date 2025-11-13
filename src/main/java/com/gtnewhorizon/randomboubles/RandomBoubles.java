@@ -1,5 +1,6 @@
 package com.gtnewhorizon.randomboubles;
 
+import com.gtnewhorizon.randomboubles.util.Constants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -32,6 +33,9 @@ public class RandomBoubles {
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent event) {
+        if (Loader.isModLoaded("ThaumicExploration")) {
+            Constants.ThaumicExploration = true;
+        }
         if (Loader.isModLoaded("Thaumcraft")) {
             RingResearch.setupResearchPage();
             ArcaneRecipes.registerArcaneRings();

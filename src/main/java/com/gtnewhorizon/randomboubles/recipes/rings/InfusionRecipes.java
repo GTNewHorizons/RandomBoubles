@@ -1,5 +1,7 @@
 package com.gtnewhorizon.randomboubles.recipes.rings;
 
+import com.gtnewhorizon.randomboubles.util.Constants;
+import flaxbeard.thaumicexploration.ThaumicExploration;
 import net.minecraft.item.ItemStack;
 
 import com.gtnewhorizon.randomboubles.BaubleItems;
@@ -19,6 +21,22 @@ public class InfusionRecipes {
 
         ItemStack salisMundus = new ItemStack(ConfigItems.itemResource, 1, 14);
 
+        ItemStack airRingMagician = new ItemStack(BaubleItems.aerRing, 1, 0);
+        ItemStack terraRingMagician = new ItemStack(BaubleItems.terraRing, 1, 0);
+        ItemStack ignisRingMagician = new ItemStack(BaubleItems.ignisRing, 1, 0);
+        ItemStack aquaRingMagician = new ItemStack(BaubleItems.aquaRing, 1, 0);
+        ItemStack ordoRingMagician = new ItemStack(BaubleItems.ordoRing, 1, 0);
+        ItemStack perditioRingMagician = new ItemStack(BaubleItems.perditioRing, 1, 0);
+
+        if (Constants.ThaumicExploration) {
+            airRingMagician = new ItemStack(ThaumicExploration.discountRing, 1, 0);
+            terraRingMagician = new ItemStack(ThaumicExploration.discountRing, 1, 1);
+            ignisRingMagician = new ItemStack(ThaumicExploration.discountRing, 1, 2);
+            aquaRingMagician = new ItemStack(ThaumicExploration.discountRing, 1, 3);
+            ordoRingMagician = new ItemStack(ThaumicExploration.discountRing, 1, 4);
+            perditioRingMagician = new ItemStack(ThaumicExploration.discountRing, 1, 5);
+        }
+
         RingResearch.recipeList.put(
             "RBArchmagesRingOfAer",
             ThaumcraftApi.addInfusionCraftingRecipe(
@@ -29,7 +47,7 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
-                new ItemStack(BaubleItems.aerRing, 1, 0),
+                airRingMagician,
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
@@ -46,7 +64,7 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
-                new ItemStack(BaubleItems.terraRing, 1, 0),
+                terraRingMagician,
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
@@ -63,7 +81,7 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
-                new ItemStack(BaubleItems.ignisRing, 1, 0),
+                ignisRingMagician,
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
@@ -80,7 +98,7 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
-                new ItemStack(BaubleItems.aquaRing, 1, 0),
+                ignisRingMagician,
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
@@ -97,7 +115,7 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
-                new ItemStack(BaubleItems.ordoRing, 1, 0),
+                ordoRingMagician,
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
@@ -114,7 +132,7 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
-                new ItemStack(BaubleItems.perditioRing, 1, 0),
+                perditioRingMagician,
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,

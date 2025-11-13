@@ -5,6 +5,7 @@ dependencies {
     implementation("thaumcraft:Thaumcraft:1.7.10-4.2.3.5:dev")
 
     compileOnly('com.github.GTNewHorizons:ThaumicBases:1.9.2:dev') {transitive=false}
+    compileOnly('com.github.GTNewHorizons:Thaumic_Exploration:1.5.5-GTNH:dev') {transitive=false}
 
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.37-GTNH:dev")
 }

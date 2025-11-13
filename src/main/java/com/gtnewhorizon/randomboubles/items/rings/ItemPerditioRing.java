@@ -2,6 +2,7 @@ package com.gtnewhorizon.randomboubles.items.rings;
 
 import java.util.List;
 
+import com.gtnewhorizon.randomboubles.util.Constants;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -56,7 +57,9 @@ public class ItemPerditioRing extends ItemBaubleRingBase {
     @Override
     public void getSubItems(Item par1, CreativeTabs tab, List<ItemStack> subItems) {
         for (int i = 0; i < RING_COUNT; i++) {
-            subItems.add(new ItemStack(this, 1, i));
+            if (i != 0 && Constants.ThaumicExploration) {
+                subItems.add(new ItemStack(this, 1, i));
+            }
         }
     }
 

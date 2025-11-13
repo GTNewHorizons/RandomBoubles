@@ -1,5 +1,7 @@
 package com.gtnewhorizon.randomboubles.recipes.rings;
 
+import com.gtnewhorizon.randomboubles.util.Constants;
+import flaxbeard.thaumicexploration.ThaumicExploration;
 import net.minecraft.item.ItemStack;
 
 import com.gtnewhorizon.randomboubles.BaubleItems;
@@ -18,15 +20,31 @@ public class ArcaneRecipes {
 
         String thaumium = "ingotThaumium";
 
-        if (Loader.isModLoaded("Gregtech")) {
+        ItemStack airRing = new ItemStack(BaubleItems.aerRing, 1, 0);
+        ItemStack terraRing = new ItemStack(BaubleItems.terraRing, 1, 0);
+        ItemStack ignisRing = new ItemStack(BaubleItems.ignisRing, 1, 0);
+        ItemStack aquaRing = new ItemStack(BaubleItems.aquaRing, 1, 0);
+        ItemStack ordoRing = new ItemStack(BaubleItems.ordoRing, 1, 0);
+        ItemStack perditioRing = new ItemStack(BaubleItems.perditioRing, 1, 0);
+
+        if (Constants.Gregtech) {
             thaumium = "plateThaumium";
+        }
+
+        if (Constants.ThaumicExploration) {
+            airRing = new ItemStack(ThaumicExploration.discountRing, 1, 0);
+            terraRing = new ItemStack(ThaumicExploration.discountRing, 1, 1);
+            ignisRing = new ItemStack(ThaumicExploration.discountRing, 1, 2);
+            aquaRing = new ItemStack(ThaumicExploration.discountRing, 1, 3);
+            ordoRing = new ItemStack(ThaumicExploration.discountRing, 1, 4);
+            perditioRing = new ItemStack(ThaumicExploration.discountRing, 1, 5);
         }
 
         RingResearch.recipeList.put(
             "RBMagiciansRingOfAer",
             ThaumcraftApi.addArcaneCraftingRecipe(
                 "RBMAGICIANSRINGOFAER",
-                new ItemStack(BaubleItems.aerRing, 1, 0),
+                airRing,
                 new AspectList().add(Aspect.AIR, 25)
                     .add(Aspect.ORDER, 10),
                 "STS",
@@ -42,7 +60,7 @@ public class ArcaneRecipes {
             "RBMagiciansRingOfTerra",
             ThaumcraftApi.addArcaneCraftingRecipe(
                 "RBMAGICIANSRINGOFTERRA",
-                new ItemStack(BaubleItems.terraRing, 1, 0),
+                terraRing,
                 new AspectList().add(Aspect.EARTH, 25)
                     .add(Aspect.ORDER, 10),
                 "STS",
@@ -58,7 +76,7 @@ public class ArcaneRecipes {
             "RBMagiciansRingOfIgnis",
             ThaumcraftApi.addArcaneCraftingRecipe(
                 "RBMAGICIANSRINGOFIGNIS",
-                new ItemStack(BaubleItems.ignisRing, 1, 0),
+                ignisRing,
                 new AspectList().add(Aspect.FIRE, 25)
                     .add(Aspect.ORDER, 10),
                 "STS",
@@ -74,7 +92,7 @@ public class ArcaneRecipes {
             "RBMagiciansRingOfAqua",
             ThaumcraftApi.addArcaneCraftingRecipe(
                 "RBMAGICIANSRINGOFAQUA",
-                new ItemStack(BaubleItems.aquaRing, 1, 0),
+                aquaRing,
                 new AspectList().add(Aspect.WATER, 25)
                     .add(Aspect.ORDER, 10),
                 "STS",
@@ -90,7 +108,7 @@ public class ArcaneRecipes {
             "RBMagiciansRingOfOrdo",
             ThaumcraftApi.addArcaneCraftingRecipe(
                 "RBMAGICIANSRINGOFORDO",
-                new ItemStack(BaubleItems.ordoRing, 1, 0),
+                ordoRing,
                 new AspectList().add(Aspect.ORDER, 35),
                 "STS",
                 "TAT",
@@ -105,7 +123,7 @@ public class ArcaneRecipes {
             "RBMagiciansRingOfPerditio",
             ThaumcraftApi.addArcaneCraftingRecipe(
                 "RBMAGICIANSRINGOFPERDITIO",
-                new ItemStack(BaubleItems.perditioRing, 1, 0),
+                perditioRing,
                 new AspectList().add(Aspect.ENTROPY, 25)
                     .add(Aspect.ORDER, 10),
                 "STS",
