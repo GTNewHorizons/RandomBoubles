@@ -62,7 +62,7 @@ item.combinationRing.7.discount=6
 item.combinationRing.8.name=Runeforged Thaumaturge's Ring
 item.combinationRing.8.discount=10
 
-item.combinationRing.cure=Grants Wither and Poison Protection
+item.combinationRing.cure=Grants immunity to Wither and Poison when worn
 
 #Thaumcraft Research
 tc.research_category.RBRINGS=Random Boubles
@@ -158,30 +158,30 @@ randomboubles_research_page.RBTHEORYRINGOFMAGICALPROTECTION.1=You just had a tho
 
 randomboubles_research_name.RBSPELLCASTERSRINGOFTHESKY=The Spellcaster's First Combination
 randomboubles_research_text.RBSPELLCASTERSRINGOFTHESKY=Looking to the Sky
-randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY.1=By taking inspiration on how the energies of the sky interact with each other, you have figured out that a combination of Air, Fire and Order comes together together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies. But perhaps you can find a way to restore its lost power...
+randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY.1=By taking inspiration on how the energies of the sky interact with each other, you have figured out that a combination of Air, Fire and Order comes together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies, but perhaps you can find a way to restore its lost power...
 randomboubles_research_name.RBEXOTICRINGOFTHESKY=The Second Combination of the Sky
 randomboubles_research_text.RBEXOTICRINGOFTHESKY=Refining the energies of the Sky
 randomboubles_research_page.RBEXOTICRINGOFTHESKY.1=You have found that the only way of restoring power to the ring is by merging multiple of them together.
 randomboubles_research_name.RBRUNEFORGEDRINGOFTHESKY=The Final Combination of the Sky
-randomboubles_research_text.RBRUNEFORGEDOFTHESKY=Tuning the energies of the Sky
-randomboubles_research_page.RBRUNEFORGEDOFTHESKY.1=Finally, the true power of the Ring has been revealed.
+randomboubles_research_text.RBRUNEFORGEDRINGOFTHESKY=Tuning the energies of the Sky
+randomboubles_research_page.RBRUNEFORGEDRINGOFTHESKY.1=Finally, the true power of the ring has been revealed.
 
 randomboubles_research_name.RBSPELLSLINGERSRINGOFTHEEARTH=The Spellslinger's First Combination
 randomboubles_research_text.RBSPELLSLINGERSRINGOFTHEEARTH=Looking to the Earth
-randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH.1=By taking inspiration on how the energies of the ground below you interact with each other, you have figured out that a combination of Earth, Water and Entropy comes together together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies. But perhaps you can find a way to restore its lost power...
+randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH.1=By taking inspiration on how the energies of the ground below you interact with each other, you have figured out that a combination of Earth, Water and Entropy comes together in harmony.<BR><BR>Sadly the final ring loses a lot of its energies, but perhaps you can find a way to restore its lost power...
 randomboubles_research_name.RBEXOTICRINGOFTHEEARTH=The Second Combination of the Earth
 randomboubles_research_text.RBEXOTICRINGOFTHEEARTH=Refining the energies of the Earth
 randomboubles_research_page.RBEXOTICRINGOFTHEEARTH.1=You have found that the only way of restoring power to the ring is by merging multiple of them together.
 randomboubles_research_name.RBRUNEFORGEDRINGOFTHEEARTH=The Final Combination of the Earth
 randomboubles_research_text.RBRUNEFORGEDRINGOFTHEEARTH=Tuning the energies of the Earth
-randomboubles_research_page.RBRUNEFORGEDRINGOFTHEEARTH.1=Finally, the true power of the Ring has been revealed.
+randomboubles_research_page.RBRUNEFORGEDRINGOFTHEEARTH.1=Finally, the true power of the ring has been revealed.
 
 randomboubles_research_name.RBTHAUMATURGESRING=The Thaumaturge's Ring
 randomboubles_research_text.RBTHAUMATURGESRING=A ring for all Aspects
-randomboubles_research_page.RBTHAUMATURGESRING.1=By combining the Ring of the Sky and the Ring of the Earth, you have managed to craft the ultimate ring of aspects.<BR><BR>As before, the final ring has lost a lot of its energies. Time to once again find a way to restore its power...
+randomboubles_research_page.RBTHAUMATURGESRING.1=By combining the Ring of the Sky and the Ring of the Earth, you have managed to craft the ultimate ring of aspects.<BR><BR>This ring is capable of protecting its wearer from mundane poisons and withering, and it also comes with a simple runic shielding enchantment. However, this has come at the expense of much of its ability to channel vis. Time to once again find a way to restore its power...
 randomboubles_research_name.RBEXOTICTHAUMATURGESRING=The Exotic Thaumaturge's Ring
-randomboubles_research_text.RBEXOTICTHAUMATURGESRING=Empovered by all Aspects
-randomboubles_research_page.RBEXOTICTHAUMATURGESRING.1=As previously, only by Combination of multiple rings can the rings true power be restored.
+randomboubles_research_text.RBEXOTICTHAUMATURGESRING=Empowered by all Aspects
+randomboubles_research_page.RBEXOTICTHAUMATURGESRING.1=As before, only by combining multiple rings can their true power be restored.
 randomboubles_research_name.RBRUNEFORGEDTHAUMATURGESRING=The Runeforged Thaumaturge's Ring
 randomboubles_research_text.RBRUNEFORGEDTHAUMATURGESRING=The final ring of all Aspects
-randomboubles_research_page.RBRUNEFORGEDTHAUMATURGESRING.1=The final Combination of all the rings.
+randomboubles_research_page.RBRUNEFORGEDTHAUMATURGESRING.1=The final combination of all the rings, fit for complete control of every aspect.

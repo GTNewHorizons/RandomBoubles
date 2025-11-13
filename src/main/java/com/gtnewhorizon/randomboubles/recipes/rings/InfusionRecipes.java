@@ -110,7 +110,7 @@ public class InfusionRecipes {
                 "RBARCHMAGESRINGOFPERDITIO",
                 new ItemStack(BaubleItems.perditioRing, 1, 1),
                 5,
-                (new AspectList()).add(Aspect.ORDER, 32)
+                (new AspectList()).add(Aspect.ENTROPY, 32)
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
@@ -217,7 +217,7 @@ public class InfusionRecipes {
                 "RBMASTERSRINGOFPERDITIO",
                 new ItemStack(BaubleItems.perditioRing, 1, 2),
                 5,
-                (new AspectList()).add(Aspect.ORDER, 64)
+                (new AspectList()).add(Aspect.ENTROPY, 64)
                     .add(Aspect.MAGIC, 64)
                     .add(Aspect.AURA, 48)
                     .add(Aspect.ENERGY, 32),
@@ -267,9 +267,9 @@ public class InfusionRecipes {
                 new ItemStack[] { new ItemStack(BaubleItems.terraRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.perditioRing, 1, 2),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.aquaRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), new ItemStack(BaubleItems.aquaRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
         RingResearch.recipeList.put(
@@ -309,9 +309,9 @@ public class InfusionRecipes {
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.combinationRing, 1, 3),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.combinationRing, 1, 3),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), new ItemStack(BaubleItems.combinationRing, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
         RingResearch.recipeList.put(
@@ -330,9 +330,9 @@ public class InfusionRecipes {
                 new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 1),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.combinationRing, 1, 1),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.combinationRing, 1, 1),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2), new ItemStack(BaubleItems.combinationRing, 1, 1),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
         RingResearch.recipeList.put(
