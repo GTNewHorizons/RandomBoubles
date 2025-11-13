@@ -53,7 +53,7 @@ public class ArcaneRecipes {
                 'A',
                 new ItemStack(ConfigItems.itemBaubleBlanks, 1, 4),
                 'S',
-                new ItemStack(ConfigBlocks.blockCrystal, 1, 1)));
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 3)));
         RingResearch.recipeList.put(
             "RBMagiciansRingOfIgnis",
             ThaumcraftApi.addArcaneCraftingRecipe(
@@ -69,7 +69,7 @@ public class ArcaneRecipes {
                 'A',
                 new ItemStack(ConfigItems.itemBaubleBlanks, 1, 5),
                 'S',
-                new ItemStack(ConfigBlocks.blockCrystal, 1, 2)));
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 1)));
         RingResearch.recipeList.put(
             "RBMagiciansRingOfAqua",
             ThaumcraftApi.addArcaneCraftingRecipe(
@@ -85,7 +85,7 @@ public class ArcaneRecipes {
                 'A',
                 new ItemStack(ConfigItems.itemBaubleBlanks, 1, 6),
                 'S',
-                new ItemStack(ConfigBlocks.blockCrystal, 1, 3)));
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 2)));
         RingResearch.recipeList.put(
             "RBMagiciansRingOfOrdo",
             ThaumcraftApi.addArcaneCraftingRecipe(
@@ -105,7 +105,7 @@ public class ArcaneRecipes {
             "RBMagiciansRingOfPerditio",
             ThaumcraftApi.addArcaneCraftingRecipe(
                 "RBMAGICIANSRINGOFPERDITIO",
-                new ItemStack(BaubleItems.ordoRing, 1, 0),
+                new ItemStack(BaubleItems.perditioRing, 1, 0),
                 new AspectList().add(Aspect.ENTROPY, 25)
                     .add(Aspect.ORDER, 10),
                 "STS",
