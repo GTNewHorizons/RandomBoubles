@@ -3,7 +3,6 @@ package com.gtnewhorizon.randomboubles.items.rings;
 import java.util.List;
 import java.util.Random;
 
-import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -18,6 +17,7 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 
 import com.gtnewhorizon.randomboubles.RandomBoubles;
+import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
 
 import baubles.common.container.InventoryBaubles;
 import baubles.common.lib.PlayerHandler;
