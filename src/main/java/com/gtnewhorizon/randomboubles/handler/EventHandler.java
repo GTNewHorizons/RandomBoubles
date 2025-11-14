@@ -1,6 +1,5 @@
 package com.gtnewhorizon.randomboubles.handler;
 
-import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 
 import com.dreammaster.gthandler.CustomItemList;
