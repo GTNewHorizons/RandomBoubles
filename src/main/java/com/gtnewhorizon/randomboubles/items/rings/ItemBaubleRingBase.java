@@ -8,6 +8,7 @@ import baubles.api.expanded.BaubleExpandedSlots;
 import baubles.common.BaubleItemBase;
 import thaumcraft.api.IRunicArmor;
 import thaumcraft.api.IVisDiscountGear;
+import thaumcraft.common.Thaumcraft;
 
 public abstract class ItemBaubleRingBase extends BaubleItemBase implements IVisDiscountGear, IRunicArmor {
 
@@ -44,10 +45,19 @@ public abstract class ItemBaubleRingBase extends BaubleItemBase implements IVisD
         return super.getUnlocalizedName() + "." + stack.getItemDamage();
     }
 
-    @Override
-    public void onEquipped(ItemStack itemstack, EntityLivingBase player) {
+    public void onEquipped(ItemStack itemStack, EntityLivingBase player) {
         if (!player.worldObj.isRemote) {
             player.worldObj.playSoundAtEntity(player, "random.orb", 0.1F, 1.3f);
+        }
+        if (getRunicCharge(itemStack) > 0) {
+            Thaumcraft.instance.runicEventHandler.isDirty = true;
+        }
+    }
+
+    @Override
+    public void onUnequipped(ItemStack itemStack, EntityLivingBase player) {
+        if (getRunicCharge(itemStack) > 0) {
+            Thaumcraft.instance.runicEventHandler.isDirty = true;
         }
     }
 }

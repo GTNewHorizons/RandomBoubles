@@ -98,7 +98,7 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 32)
                     .add(Aspect.AURA, 24)
                     .add(Aspect.ENERGY, 16),
-                ignisRingMagician,
+                aquaRingMagician,
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,

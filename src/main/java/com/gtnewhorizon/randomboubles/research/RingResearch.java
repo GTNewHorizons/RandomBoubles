@@ -1,8 +1,10 @@
 package com.gtnewhorizon.randomboubles.research;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagByte;
 import net.minecraft.util.ResourceLocation;
 
 import com.gtnewhorizon.randomboubles.BaubleItems;
@@ -18,6 +20,7 @@ import thaumcraft.api.research.ResearchCategories;
 import thaumcraft.api.research.ResearchPage;
 import thaumcraft.common.config.ConfigBlocks;
 import thaumcraft.common.config.ConfigItems;
+import thaumcraft.common.lib.crafting.InfusionRunicAugmentRecipe;
 
 public class RingResearch {
 
@@ -461,7 +464,7 @@ public class RingResearch {
             researchAspects,
             0,
             -2,
-            0,
+            2,
             new ItemStack(ConfigBlocks.blockCrystal, 1, 6)).setRound()
                 .setParents(
                     "RBMASTERSRINGOFAER",
@@ -488,14 +491,27 @@ public class RingResearch {
             researchAspects,
             -4,
             -2,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 6)).setRound()
                 .setParents("RBMASTEROFTHEELEMENTALRINGS")
                 .setPages(pages)
                 .registerResearchItem();
-        // Ring of Magical Protection
-        pages = new ResearchPage[] {
-            new ResearchPage("randomboubles_research_page.RBTHEORYRINGOFMAGICALPROTECTION.1") };
+        // Applying Runic Shield
+        ArrayList<InfusionRecipe> shieldRecipes = new ArrayList<>();
+        ItemStack[] rings = { new ItemStack(BaubleItems.aerRing, 1, 2), new ItemStack(BaubleItems.terraRing, 1, 2),
+            new ItemStack(BaubleItems.ignisRing, 1, 2), new ItemStack(BaubleItems.aquaRing, 1, 2),
+            new ItemStack(BaubleItems.ordoRing, 1, 2), new ItemStack(BaubleItems.perditioRing, 1, 2), };
+        for (ItemStack ring : rings) {
+            for (int i = 0; i <= 2; i++) {
+                ItemStack r = ring.copy();
+                if (i > 0) {
+                    r.setTagInfo("RS.HARDEN", new NBTTagByte((byte) i));
+                }
+                shieldRecipes.add(new InfusionRunicAugmentRecipe(r));
+            }
+        }
+        pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBTHEORYRINGOFMAGICALPROTECTION.1"),
+            new ResearchPage(shieldRecipes.toArray(new InfusionRecipe[0])) };
         researchAspects = new AspectList().add(Aspect.AIR, 32)
             .add(Aspect.EARTH, 32)
             .add(Aspect.FIRE, 32)
@@ -510,10 +526,9 @@ public class RingResearch {
             researchAspects,
             4,
             -2,
-            0,
+            2,
             new ResourceLocation("thaumcraft", "textures/misc/r_runicupg.png")).setRound()
-                .setParents("RBMASTEROFTHEELEMENTALRINGS", "RUNICARMOR")
-                .setAutoUnlock()
+                .setParents("RBMASTEROFTHEELEMENTALRINGS", "RUNICAUGMENTATION")
                 .setPages(pages)
                 .registerResearchItem();
 
@@ -531,7 +546,7 @@ public class RingResearch {
             researchAspects,
             -5,
             -3,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 0)).setParents("RBTHEORYRINGOFCOMBINATIONS")
                 .setPages(pages)
                 .registerResearchItem();
@@ -549,7 +564,7 @@ public class RingResearch {
             researchAspects,
             -5,
             -1,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 3)).setParents("RBTHEORYRINGOFCOMBINATIONS")
                 .setPages(pages)
                 .registerResearchItem();
@@ -567,7 +582,7 @@ public class RingResearch {
             researchAspects,
             -6,
             -4,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 1)).setParents("RBSPELLCASTERSRINGOFTHESKY")
                 .setPages(pages)
                 .registerResearchItem();
@@ -585,7 +600,7 @@ public class RingResearch {
             researchAspects,
             -6,
             0,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 4)).setParents("RBSPELLSLINGERSRINGOFTHEEARTH")
                 .setPages(pages)
                 .registerResearchItem();
@@ -603,7 +618,7 @@ public class RingResearch {
             researchAspects,
             -7,
             -5,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 2)).setParents("RBEXOTICRINGOFTHESKY")
                 .setPages(pages)
                 .registerResearchItem();
@@ -621,7 +636,7 @@ public class RingResearch {
             researchAspects,
             -7,
             1,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 5)).setParents("RBEXOTICRINGOFTHEEARTH")
                 .setPages(pages)
                 .registerResearchItem();
@@ -631,7 +646,7 @@ public class RingResearch {
             new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 64)
             .add(Aspect.AIR, 64)
-            .add(Aspect.EARTH, 64)
+            .add(Aspect.FIRE, 64)
             .add(Aspect.WATER, 64)
             .add(Aspect.ORDER, 64)
             .add(Aspect.ENTROPY, 64)
@@ -643,7 +658,7 @@ public class RingResearch {
             researchAspects,
             -7,
             -2,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 6))
                 .setParents("RBRUNEFORGEDRINGOFTHESKY", "RBRUNEFORGEDRINGOFTHEEARTH", "RBTHEORYRINGOFCOMBINATIONS")
                 .setPages(pages)
@@ -652,7 +667,7 @@ public class RingResearch {
             new ResearchPage((InfusionRecipe) recipeList.get("RBExoticThaumaturgesRing")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 128)
             .add(Aspect.AIR, 128)
-            .add(Aspect.EARTH, 128)
+            .add(Aspect.FIRE, 128)
             .add(Aspect.WATER, 128)
             .add(Aspect.ORDER, 128)
             .add(Aspect.ENTROPY, 128)
@@ -664,7 +679,7 @@ public class RingResearch {
             researchAspects,
             -8,
             -3,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 6)).setParents("RBTHAUMATURGESRING")
                 .setPages(pages)
                 .registerResearchItem();
@@ -672,7 +687,7 @@ public class RingResearch {
             new ResearchPage((InfusionRecipe) recipeList.get("RBRuneforgedThaumaturgesRing")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 256)
             .add(Aspect.AIR, 256)
-            .add(Aspect.EARTH, 256)
+            .add(Aspect.FIRE, 256)
             .add(Aspect.WATER, 256)
             .add(Aspect.ORDER, 256)
             .add(Aspect.ENTROPY, 256)
@@ -684,7 +699,7 @@ public class RingResearch {
             researchAspects,
             -8,
             -1,
-            0,
+            2,
             new ItemStack(BaubleItems.combinationRing, 1, 6)).setParents("RBEXOTICTHAUMATURGESRING")
                 .setPages(pages)
                 .registerResearchItem();
