@@ -6,6 +6,7 @@ dependencies {
 
     compileOnly('com.github.GTNewHorizons:ThaumicBases:1.9.2:dev') {transitive=false}
     compileOnly('com.github.GTNewHorizons:Thaumic_Exploration:1.5.5-GTNH:dev') {transitive=false}
+    compileOnly("com.github.GTNewHorizons:NewHorizonsCoreMod:2.8.31:dev")
 
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NotEnoughItems:2.8.37-GTNH:dev")
 }

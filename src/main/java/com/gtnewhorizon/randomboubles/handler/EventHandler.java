@@ -3,7 +3,9 @@ package com.gtnewhorizon.randomboubles.handler;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 
+import com.dreammaster.gthandler.CustomItemList;
 import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
+import com.gtnewhorizon.randomboubles.util.Constants;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent.ItemCraftedEvent;
@@ -16,8 +18,15 @@ public class EventHandler {
     @SubscribeEvent
     public void onCrafted(ItemCraftedEvent event) {
         ItemStack output = event.crafting;
-        IInventory craftMatrix = event.craftMatrix;
         if (output.getItem() instanceof IPrimordialGemCrafting && !event.player.worldObj.isRemote) {
+            ItemStack returnedPearl = new ItemStack(
+                ConfigItems.itemEldritchObject,
+                ((IPrimordialGemCrafting) output.getItem()).getReturnedPearls(output),
+                3);
+            if (Constants.GTNH) {
+                returnedPearl = CustomItemList.PrimordialPearlFragment
+                    .get(((IPrimordialGemCrafting) output.getItem()).getReturnedPearls(output));
+            }
             if (((IPrimordialGemCrafting) output.getItem()).getReturnedPearls(output) > 0) {
                 double iX = event.player.posX;
                 double iY = event.player.posY + 1;
@@ -31,15 +40,7 @@ public class EventHandler {
                             iY = event.player.posY + yy - .5;
                             iZ = event.player.posZ + zz;
                         }
-                EntitySpecialItem entityitem = new EntitySpecialItem(
-                    event.player.worldObj,
-                    iX,
-                    iY,
-                    iZ,
-                    new ItemStack(
-                        ConfigItems.itemEldritchObject,
-                        ((IPrimordialGemCrafting) output.getItem()).getReturnedPearls(output),
-                        3));
+                EntitySpecialItem entityitem = new EntitySpecialItem(event.player.worldObj, iX, iY, iZ, returnedPearl);
                 entityitem.motionX = entityitem.motionY = entityitem.motionZ = 0;
             }
         }

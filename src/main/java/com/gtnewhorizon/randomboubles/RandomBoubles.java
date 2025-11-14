@@ -47,6 +47,12 @@ public class RandomBoubles {
         if (Loader.isModLoaded("ThaumicExploration")) {
             Constants.ThaumicExploration = true;
         }
+        if (Loader.isModLoaded("Gregtech")) {
+            Constants.Gregtech = true;
+        }
+        if (Loader.isModLoaded("Dreamcraft")) {
+            Constants.GTNH = true;
+        }
         if (Loader.isModLoaded("Thaumcraft")) {
             RingResearch.setupResearchPage();
             ArcaneRecipes.registerArcaneRings();
