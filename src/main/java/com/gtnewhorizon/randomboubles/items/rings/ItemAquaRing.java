@@ -43,7 +43,6 @@ public class ItemAquaRing extends ItemBaubleRingBase {
                 + ": "
                 + StatCollector.translateToLocal(getUnlocalizedName(stack) + ".discount")
                 + "%");
-        tooltip.add("");
         super.addInformation(stack, player, tooltip, debug);
     }
 
