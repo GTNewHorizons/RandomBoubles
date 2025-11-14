@@ -56,8 +56,8 @@ public class RingResearch {
 
         // Apprentice Ring of Aer
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBAPPRENTICERINGOFAER.1") };
-        researchAspects = new AspectList().add(Aspect.AIR, 4)
-            .add(Aspect.MAGIC, 8);
+        researchAspects = new AspectList().add(Aspect.AIR, 2)
+            .add(Aspect.MAGIC, 4);
         getResearchItem(
             "RBAPPRENTICERINGOFAER",
             "RBRINGS",
@@ -73,8 +73,8 @@ public class RingResearch {
                 .registerResearchItem();
         // Apprentice Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBAPPRENTICERINGOFTERRA.1") };
-        researchAspects = new AspectList().add(Aspect.EARTH, 4)
-            .add(Aspect.MAGIC, 8);
+        researchAspects = new AspectList().add(Aspect.EARTH, 2)
+            .add(Aspect.MAGIC, 4);
         getResearchItem(
             "RBAPPRENTICERINGOFTERRA",
             "RBRINGS",
@@ -90,8 +90,8 @@ public class RingResearch {
                 .registerResearchItem();
         // Apprentice Ring of Ignis
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBAPPRENTICERINGOFIGNIS.1") };
-        researchAspects = new AspectList().add(Aspect.FIRE, 4)
-            .add(Aspect.MAGIC, 8);
+        researchAspects = new AspectList().add(Aspect.FIRE, 2)
+            .add(Aspect.MAGIC, 4);
         getResearchItem(
             "RBAPPRENTICERINGOFIGNIS",
             "RBRINGS",
@@ -106,8 +106,8 @@ public class RingResearch {
                 .setPages(pages)
                 .registerResearchItem();
         // Apprentice Ring of Aqua
-        researchAspects = new AspectList().add(Aspect.WATER, 4)
-            .add(Aspect.MAGIC, 8);
+        researchAspects = new AspectList().add(Aspect.WATER, 2)
+            .add(Aspect.MAGIC, 4);
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBAPPRENTICERINGOFAQUA.1") };
         getResearchItem(
             "RBAPPRENTICERINGOFAQUA",
@@ -124,8 +124,8 @@ public class RingResearch {
                 .registerResearchItem();
         // Apprentice Ring of Ordo
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBAPPRENTICERINGOFORDO.1") };
-        researchAspects = new AspectList().add(Aspect.ORDER, 4)
-            .add(Aspect.MAGIC, 8);
+        researchAspects = new AspectList().add(Aspect.ORDER, 2)
+            .add(Aspect.MAGIC, 4);
         getResearchItem(
             "RBAPPRENTICERINGOFORDO",
             "RBRINGS",
@@ -141,8 +141,8 @@ public class RingResearch {
                 .registerResearchItem();
         // Apprentice Ring of Perditio
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBAPPRENTICERINGOFPERDITIO.1") };
-        researchAspects = new AspectList().add(Aspect.ENTROPY, 4)
-            .add(Aspect.MAGIC, 8);
+        researchAspects = new AspectList().add(Aspect.ENTROPY, 2)
+            .add(Aspect.MAGIC, 4);
         getResearchItem(
             "RBAPPRENTICERINGOFPERDITIO",
             "RBRINGS",
@@ -160,9 +160,9 @@ public class RingResearch {
         // Magician's Ring of Aer
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFAER.1"),
             new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfAer")) };
-        researchAspects = new AspectList().add(Aspect.AIR, 8)
-            .add(Aspect.MAGIC, 16)
-            .add(Aspect.AURA, 16);
+        researchAspects = new AspectList().add(Aspect.AIR, 4)
+            .add(Aspect.MAGIC, 8)
+            .add(Aspect.AURA, 4);
         getResearchItem(
             "RBMAGICIANSRINGOFAER",
             "RBRINGS",
@@ -176,9 +176,9 @@ public class RingResearch {
         // Magician's Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFTERRA.1"),
             new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfTerra")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 8)
-            .add(Aspect.MAGIC, 16)
-            .add(Aspect.AURA, 16);
+        researchAspects = new AspectList().add(Aspect.EARTH, 4)
+            .add(Aspect.MAGIC, 8)
+            .add(Aspect.AURA, 4);
         getResearchItem(
             "RBMAGICIANSRINGOFTERRA",
             "RBRINGS",
@@ -192,9 +192,9 @@ public class RingResearch {
         // Magician's Ring of Ignis
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFIGNIS.1"),
             new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfIgnis")) };
-        researchAspects = new AspectList().add(Aspect.FIRE, 8)
-            .add(Aspect.MAGIC, 16)
-            .add(Aspect.AURA, 16);
+        researchAspects = new AspectList().add(Aspect.FIRE, 4)
+            .add(Aspect.MAGIC, 8)
+            .add(Aspect.AURA, 4);
         getResearchItem(
             "RBMAGICIANSRINGOFIGNIS",
             "RBRINGS",
@@ -208,9 +208,9 @@ public class RingResearch {
         // Magician's Ring of Aqua
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFAQUA.1"),
             new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfAqua")) };
-        researchAspects = new AspectList().add(Aspect.WATER, 8)
-            .add(Aspect.MAGIC, 16)
-            .add(Aspect.AURA, 16);
+        researchAspects = new AspectList().add(Aspect.WATER, 4)
+            .add(Aspect.MAGIC, 8)
+            .add(Aspect.AURA, 4);
         getResearchItem(
             "RBMAGICIANSRINGOFAQUA",
             "RBRINGS",
@@ -224,9 +224,9 @@ public class RingResearch {
         // Magician's Ring of Ordo
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFORDO.1"),
             new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfOrdo")) };
-        researchAspects = new AspectList().add(Aspect.ORDER, 8)
-            .add(Aspect.MAGIC, 16)
-            .add(Aspect.AURA, 16);
+        researchAspects = new AspectList().add(Aspect.ORDER, 4)
+            .add(Aspect.MAGIC, 8)
+            .add(Aspect.AURA, 4);
         getResearchItem(
             "RBMAGICIANSRINGOFORDO",
             "RBRINGS",
@@ -240,9 +240,9 @@ public class RingResearch {
         // Magician's Ring of Perditio
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMAGICIANSRINGOFPERDITIO.1"),
             new ResearchPage((ShapedArcaneRecipe) recipeList.get("RBMagiciansRingOfPerditio")) };
-        researchAspects = new AspectList().add(Aspect.ENTROPY, 8)
-            .add(Aspect.MAGIC, 16)
-            .add(Aspect.AURA, 16);
+        researchAspects = new AspectList().add(Aspect.ENTROPY, 4)
+            .add(Aspect.MAGIC, 8)
+            .add(Aspect.AURA, 4);
         getResearchItem(
             "RBMAGICIANSRINGOFPERDITIO",
             "RBRINGS",
@@ -257,9 +257,9 @@ public class RingResearch {
         // Archmage's Ring of Aer
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFAER.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfAer")) };
-        researchAspects = new AspectList().add(Aspect.AIR, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.AIR, 6)
+            .add(Aspect.MAGIC, 12)
+            .add(Aspect.AURA, 6);
         getResearchItem(
             "RBARCHMAGESRINGOFAER",
             "RBRINGS",
@@ -273,9 +273,9 @@ public class RingResearch {
         // Archmage's Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFTERRA.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfTerra")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.EARTH, 6)
+            .add(Aspect.MAGIC, 12)
+            .add(Aspect.AURA, 6);
         getResearchItem(
             "RBARCHMAGESRINGOFTERRA",
             "RBRINGS",
@@ -289,9 +289,9 @@ public class RingResearch {
         // Archmage's Ring of Ignis
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFIGNIS.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfIgnis")) };
-        researchAspects = new AspectList().add(Aspect.FIRE, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.FIRE, 6)
+            .add(Aspect.MAGIC, 12)
+            .add(Aspect.AURA, 6);
         getResearchItem(
             "RBARCHMAGESRINGOFIGNIS",
             "RBRINGS",
@@ -305,9 +305,9 @@ public class RingResearch {
         // Archmage's Ring of Aqua
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFAQUA.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfAqua")) };
-        researchAspects = new AspectList().add(Aspect.WATER, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.WATER, 6)
+            .add(Aspect.MAGIC, 12)
+            .add(Aspect.AURA, 6);
         getResearchItem(
             "RBARCHMAGESRINGOFAQUA",
             "RBRINGS",
@@ -321,9 +321,9 @@ public class RingResearch {
         // Archmage's Ring of Ordo
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFORDO.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfOrdo")) };
-        researchAspects = new AspectList().add(Aspect.ORDER, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.ORDER, 6)
+            .add(Aspect.MAGIC, 12)
+            .add(Aspect.AURA, 6);
         getResearchItem(
             "RBARCHMAGESRINGOFORDO",
             "RBRINGS",
@@ -337,9 +337,9 @@ public class RingResearch {
         // Archmage's Ring of Perditio
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBARCHMAGESRINGOFPERDITIO.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBArchmagesRingOfPerditio")) };
-        researchAspects = new AspectList().add(Aspect.ENTROPY, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.ENTROPY, 6)
+            .add(Aspect.MAGIC, 12)
+            .add(Aspect.AURA, 6);
         getResearchItem(
             "RBARCHMAGESRINGOFPERDITIO",
             "RBRINGS",
@@ -354,9 +354,9 @@ public class RingResearch {
         // Master's Ring of Aer
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFAER.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBMastersRingOfAer")) };
-        researchAspects = new AspectList().add(Aspect.AIR, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.AIR, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBMASTERSRINGOFAER",
             "RBRINGS",
@@ -370,9 +370,9 @@ public class RingResearch {
         // Master's Ring of Terra
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFTERRA.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBMastersRingOfTerra")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.EARTH, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBMASTERSRINGOFTERRA",
             "RBRINGS",
@@ -386,9 +386,9 @@ public class RingResearch {
         // Master's Ring of Ignis
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFIGNIS.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBMastersRingOfIgnis")) };
-        researchAspects = new AspectList().add(Aspect.FIRE, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.FIRE, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBMASTERSRINGOFIGNIS",
             "RBRINGS",
@@ -402,9 +402,9 @@ public class RingResearch {
         // Master's Ring of Aqua
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFAQUA.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBMastersRingOfAqua")) };
-        researchAspects = new AspectList().add(Aspect.WATER, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.WATER, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBMASTERSRINGOFAQUA",
             "RBRINGS",
@@ -418,9 +418,9 @@ public class RingResearch {
         // Master's Ring of Ordo
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFORDO.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBMastersRingOfOrdo")) };
-        researchAspects = new AspectList().add(Aspect.ORDER, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.ORDER, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBMASTERSRINGOFORDO",
             "RBRINGS",
@@ -434,9 +434,9 @@ public class RingResearch {
         // Master's Ring of Perditio
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTERSRINGOFPERDITIO.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBMastersRingOfPerditio")) };
-        researchAspects = new AspectList().add(Aspect.ENTROPY, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.ENTROPY, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBMASTERSRINGOFPERDITIO",
             "RBRINGS",
@@ -450,14 +450,14 @@ public class RingResearch {
 
         // Master of the Elemental Rings
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBMASTEROFTHEELEMENTALRINGS.1") };
-        researchAspects = new AspectList().add(Aspect.AIR, 32)
-            .add(Aspect.EARTH, 32)
-            .add(Aspect.FIRE, 32)
-            .add(Aspect.WATER, 32)
-            .add(Aspect.ORDER, 32)
-            .add(Aspect.ENTROPY, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.AIR, 8)
+            .add(Aspect.EARTH, 8)
+            .add(Aspect.FIRE, 8)
+            .add(Aspect.WATER, 8)
+            .add(Aspect.ORDER, 8)
+            .add(Aspect.ENTROPY, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBMASTEROFTHEELEMENTALRINGS",
             "RBRINGS",
@@ -477,14 +477,14 @@ public class RingResearch {
                 .registerResearchItem();
         // Ring of Combinations
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBTHEORYRINGOFCOMBINATIONS.1") };
-        researchAspects = new AspectList().add(Aspect.AIR, 32)
-            .add(Aspect.EARTH, 32)
-            .add(Aspect.FIRE, 32)
-            .add(Aspect.WATER, 32)
-            .add(Aspect.ORDER, 32)
-            .add(Aspect.ENTROPY, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.AIR, 8)
+            .add(Aspect.EARTH, 8)
+            .add(Aspect.FIRE, 8)
+            .add(Aspect.WATER, 8)
+            .add(Aspect.ORDER, 8)
+            .add(Aspect.ENTROPY, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBTHEORYRINGOFCOMBINATIONS",
             "RBRINGS",
@@ -512,14 +512,14 @@ public class RingResearch {
         }
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBTHEORYRINGOFMAGICALPROTECTION.1"),
             new ResearchPage(shieldRecipes.toArray(new InfusionRecipe[0])) };
-        researchAspects = new AspectList().add(Aspect.AIR, 32)
-            .add(Aspect.EARTH, 32)
-            .add(Aspect.FIRE, 32)
-            .add(Aspect.WATER, 32)
-            .add(Aspect.ORDER, 32)
-            .add(Aspect.ENTROPY, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.AIR, 8)
+            .add(Aspect.EARTH, 8)
+            .add(Aspect.FIRE, 8)
+            .add(Aspect.WATER, 8)
+            .add(Aspect.ORDER, 8)
+            .add(Aspect.ENTROPY, 8)
+            .add(Aspect.MAGIC, 16)
+            .add(Aspect.AURA, 8);
         getResearchItem(
             "RBTHEORYRINGOFMAGICALPROTECTION",
             "RBRINGS",
@@ -535,11 +535,11 @@ public class RingResearch {
         // Spellcaster's Ring of the Sky
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBSpellcastersRingOfTheSky")) };
-        researchAspects = new AspectList().add(Aspect.AIR, 16)
-            .add(Aspect.FIRE, 16)
-            .add(Aspect.ORDER, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.AIR, 12)
+            .add(Aspect.FIRE, 12)
+            .add(Aspect.ORDER, 12)
+            .add(Aspect.MAGIC, 24)
+            .add(Aspect.AURA, 12);
         getResearchItem(
             "RBSPELLCASTERSRINGOFTHESKY",
             "RBRINGS",
@@ -553,11 +553,11 @@ public class RingResearch {
         // Spellslinger's Ring of the Earth
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBSpellslingersRingoftheEarth")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 16)
-            .add(Aspect.WATER, 16)
-            .add(Aspect.ENTROPY, 16)
-            .add(Aspect.MAGIC, 32)
-            .add(Aspect.AURA, 32);
+        researchAspects = new AspectList().add(Aspect.EARTH, 12)
+            .add(Aspect.WATER, 12)
+            .add(Aspect.ENTROPY, 12)
+            .add(Aspect.MAGIC, 24)
+            .add(Aspect.AURA, 12);
         getResearchItem(
             "RBSPELLSLINGERSRINGOFTHEEARTH",
             "RBRINGS",
@@ -571,11 +571,11 @@ public class RingResearch {
         // Exotic Ring of the Sky
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBEXOTICRINGOFTHESKY.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBExoticRingOfTheSky")) };
-        researchAspects = new AspectList().add(Aspect.AIR, 32)
-            .add(Aspect.FIRE, 32)
-            .add(Aspect.ORDER, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.AIR, 14)
+            .add(Aspect.FIRE, 14)
+            .add(Aspect.ORDER, 14)
+            .add(Aspect.MAGIC, 28)
+            .add(Aspect.AURA, 14);
         getResearchItem(
             "RBEXOTICRINGOFTHESKY",
             "RBRINGS",
@@ -589,11 +589,11 @@ public class RingResearch {
         // Exotic Ring of the Earth
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBEXOTICRINGOFTHEEARTH.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBExoticRingoftheEarth")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 32)
-            .add(Aspect.WATER, 32)
-            .add(Aspect.ENTROPY, 32)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.EARTH, 14)
+            .add(Aspect.WATER, 14)
+            .add(Aspect.ENTROPY, 14)
+            .add(Aspect.MAGIC, 28)
+            .add(Aspect.AURA, 14);
         getResearchItem(
             "RBEXOTICRINGOFTHEEARTH",
             "RBRINGS",
@@ -607,11 +607,11 @@ public class RingResearch {
         // Runeforged Ring of the Sky
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBRUNEFORGEDRINGOFTHESKY.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBRuneforgedRingOfTheSky")) };
-        researchAspects = new AspectList().add(Aspect.AIR, 64)
-            .add(Aspect.FIRE, 64)
-            .add(Aspect.ORDER, 64)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.AIR, 16)
+            .add(Aspect.FIRE, 16)
+            .add(Aspect.ORDER, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 16);
         getResearchItem(
             "RBRUNEFORGEDRINGOFTHESKY",
             "RBRINGS",
@@ -625,11 +625,11 @@ public class RingResearch {
         // Runeforged Ring of the Earth
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBRUNEFORGEDRINGOFTHEEARTH.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBRuneforgedRingoftheEarth")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 64)
-            .add(Aspect.WATER, 64)
-            .add(Aspect.ENTROPY, 64)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.EARTH, 16)
+            .add(Aspect.WATER, 16)
+            .add(Aspect.ENTROPY, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 16);
         getResearchItem(
             "RBRUNEFORGEDRINGOFTHEEARTH",
             "RBRINGS",
@@ -644,14 +644,14 @@ public class RingResearch {
         // Thaumaturge's Ring
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBTHAUMATURGESRING.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 64)
-            .add(Aspect.AIR, 64)
-            .add(Aspect.FIRE, 64)
-            .add(Aspect.WATER, 64)
-            .add(Aspect.ORDER, 64)
-            .add(Aspect.ENTROPY, 64)
-            .add(Aspect.MAGIC, 64)
-            .add(Aspect.AURA, 64);
+        researchAspects = new AspectList().add(Aspect.EARTH, 16)
+            .add(Aspect.AIR, 16)
+            .add(Aspect.FIRE, 16)
+            .add(Aspect.WATER, 16)
+            .add(Aspect.ORDER, 16)
+            .add(Aspect.ENTROPY, 16)
+            .add(Aspect.MAGIC, 32)
+            .add(Aspect.AURA, 16);
         getResearchItem(
             "RBTHAUMATURGESRING",
             "RBRINGS",
@@ -665,14 +665,14 @@ public class RingResearch {
                 .registerResearchItem();
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBEXOTICTHAUMATURGESRING.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBExoticThaumaturgesRing")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 128)
-            .add(Aspect.AIR, 128)
-            .add(Aspect.FIRE, 128)
-            .add(Aspect.WATER, 128)
-            .add(Aspect.ORDER, 128)
-            .add(Aspect.ENTROPY, 128)
-            .add(Aspect.MAGIC, 128)
-            .add(Aspect.AURA, 128);
+        researchAspects = new AspectList().add(Aspect.EARTH, 16)
+            .add(Aspect.AIR, 16)
+            .add(Aspect.FIRE, 16)
+            .add(Aspect.WATER, 16)
+            .add(Aspect.ORDER, 16)
+            .add(Aspect.ENTROPY, 16)
+            .add(Aspect.MAGIC, 48)
+            .add(Aspect.AURA, 16);
         getResearchItem(
             "RBEXOTICTHAUMATURGESRING",
             "RBRINGS",
@@ -685,14 +685,14 @@ public class RingResearch {
                 .registerResearchItem();
         pages = new ResearchPage[] { new ResearchPage("randomboubles_research_page.RBRUNEFORGEDTHAUMATURGESRING.1"),
             new ResearchPage((InfusionRecipe) recipeList.get("RBRuneforgedThaumaturgesRing")) };
-        researchAspects = new AspectList().add(Aspect.EARTH, 256)
-            .add(Aspect.AIR, 256)
-            .add(Aspect.FIRE, 256)
-            .add(Aspect.WATER, 256)
-            .add(Aspect.ORDER, 256)
-            .add(Aspect.ENTROPY, 256)
-            .add(Aspect.MAGIC, 256)
-            .add(Aspect.AURA, 256);
+        researchAspects = new AspectList().add(Aspect.EARTH, 16)
+            .add(Aspect.AIR, 16)
+            .add(Aspect.FIRE, 16)
+            .add(Aspect.WATER, 16)
+            .add(Aspect.ORDER, 16)
+            .add(Aspect.ENTROPY, 16)
+            .add(Aspect.MAGIC, 64)
+            .add(Aspect.AURA, 16);
         getResearchItem(
             "RBRUNEFORGEDTHAUMATURGESRING",
             "RBRINGS",
