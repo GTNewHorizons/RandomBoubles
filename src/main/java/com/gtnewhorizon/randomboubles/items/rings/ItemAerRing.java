@@ -57,7 +57,11 @@ public class ItemAerRing extends ItemBaubleRingBase {
     @Override
     public void getSubItems(Item par1, CreativeTabs tab, List<ItemStack> subItems) {
         for (int i = 0; i < RING_COUNT; i++) {
-            if (i != 0 && Constants.ThaumicExploration) {
+            if (Constants.ThaumicExploration) {
+                if (i != 0) {
+                    subItems.add(new ItemStack(this, 1, i));
+                }
+            } else {
                 subItems.add(new ItemStack(this, 1, i));
             }
         }
