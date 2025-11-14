@@ -14,13 +14,14 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 
 import com.gtnewhorizon.randomboubles.RandomBoubles;
+import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
 import com.gtnewhorizon.randomboubles.util.Constants;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import thaumcraft.api.aspects.Aspect;
 
-public class ItemPerditioRing extends ItemBaubleRingBase {
+public class ItemPerditioRing extends ItemBaubleRingBase implements IPrimordialGemCrafting {
 
     static final int RING_COUNT = 3;
     private IIcon[] icons;
@@ -108,5 +109,14 @@ public class ItemPerditioRing extends ItemBaubleRingBase {
     @Override
     public int getRunicCharge(ItemStack stack) {
         return 0;
+    }
+
+    @Override
+    public int getReturnedPearls(ItemStack stack) {
+        if (this.getDamage(stack) == 2) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }

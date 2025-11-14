@@ -3,6 +3,7 @@ package com.gtnewhorizon.randomboubles.items.rings;
 import java.util.List;
 import java.util.Random;
 
+import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityLivingBase;
@@ -25,7 +26,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.common.Thaumcraft;
 
-public class ItemCombinationRings extends ItemBaubleRingBase {
+public class ItemCombinationRings extends ItemBaubleRingBase implements IPrimordialGemCrafting {
 
     Random _mRnd = new Random();
 
@@ -213,5 +214,10 @@ public class ItemCombinationRings extends ItemBaubleRingBase {
             case 8 -> 6;
             default -> 0;
         };
+    }
+
+    @Override
+    public int getReturnedPearls(ItemStack stack) {
+        return 1;
     }
 }

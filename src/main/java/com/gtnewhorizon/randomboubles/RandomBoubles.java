@@ -1,5 +1,8 @@
 package com.gtnewhorizon.randomboubles;
 
+import com.gtnewhorizon.randomboubles.handler.EventHandler;
+import cpw.mods.fml.common.FMLCommonHandler;
+import net.minecraftforge.common.MinecraftForge;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -26,9 +29,14 @@ public class RandomBoubles {
     public static final String MODID = "randomboubles";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
 
+    public EventHandler eventHandler;
+
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         BaubleItems.init();
+        eventHandler = new EventHandler();
+        MinecraftForge.EVENT_BUS.register(eventHandler);
+        FMLCommonHandler.instance().bus().register(eventHandler);
     }
 
     @Mod.EventHandler
