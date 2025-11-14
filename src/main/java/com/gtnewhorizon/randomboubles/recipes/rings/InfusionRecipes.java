@@ -303,8 +303,7 @@ public class InfusionRecipes {
                     .add(Aspect.AURA, 96)
                     .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
-                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 0),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.combinationRing, 1, 0),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
@@ -324,8 +323,7 @@ public class InfusionRecipes {
                     .add(Aspect.AURA, 96)
                     .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
-                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 3),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.combinationRing, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
@@ -345,8 +343,7 @@ public class InfusionRecipes {
                     .add(Aspect.AURA, 192)
                     .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
-                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 1),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.combinationRing, 1, 1),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
@@ -366,8 +363,7 @@ public class InfusionRecipes {
                     .add(Aspect.AURA, 192)
                     .add(Aspect.ENERGY, 64),
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
-                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 4),
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
+                new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.combinationRing, 1, 4),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
