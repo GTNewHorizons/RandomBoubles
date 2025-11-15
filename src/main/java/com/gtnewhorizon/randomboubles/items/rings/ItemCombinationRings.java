@@ -16,8 +16,10 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 
+import com.dreammaster.gthandler.CustomItemList;
 import com.gtnewhorizon.randomboubles.RandomBoubles;
 import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
+import com.gtnewhorizon.randomboubles.util.Constants;
 
 import baubles.common.container.InventoryBaubles;
 import baubles.common.lib.PlayerHandler;
@@ -25,6 +27,8 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import thaumcraft.api.aspects.Aspect;
 import thaumcraft.common.Thaumcraft;
+import thaumcraft.common.config.ConfigItems;
+import witchinggadgets.common.WGContent;
 
 public class ItemCombinationRings extends ItemBaubleRingBase implements IPrimordialGemCrafting {
 
@@ -217,7 +221,30 @@ public class ItemCombinationRings extends ItemBaubleRingBase implements IPrimord
     }
 
     @Override
-    public int getReturnedPearls(ItemStack stack) {
+    public int getReturnedItemAmount(ItemStack stack) {
         return 1;
+    }
+
+    @Override
+    public ItemStack getReturnItem(ItemStack stack) {
+        switch (stack.getItemDamage()) {
+            case 0, 1, 3, 4 -> {
+                if (Constants.WitchingGadgets) {
+                    return new ItemStack(WGContent.ItemMaterial, this.getReturnedItemAmount(stack), 12);
+                } else {
+                    return new ItemStack(ConfigItems.itemEldritchObject, this.getReturnedItemAmount(stack), 3);
+                }
+            }
+            case 2, 5, 6 -> {
+                if (Constants.GTNH) {
+                    return CustomItemList.PrimordialPearlFragment.get(this.getReturnedItemAmount(stack));
+                } else {
+                    return new ItemStack(ConfigItems.itemEldritchObject, this.getReturnedItemAmount(stack), 3);
+                }
+            }
+            default -> {
+                return null;
+            }
+        }
     }
 }

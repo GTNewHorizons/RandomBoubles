@@ -4,5 +4,8 @@ import net.minecraft.item.ItemStack;
 
 public interface IPrimordialGemCrafting {
 
-    public int getReturnedPearls(ItemStack stack);
+    int getReturnedItemAmount(ItemStack stack);
+
+    // Return null for empty.
+    ItemStack getReturnItem(ItemStack stack);
 }

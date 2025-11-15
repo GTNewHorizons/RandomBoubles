@@ -53,6 +53,9 @@ public class RandomBoubles {
         if (Loader.isModLoaded("Dreamcraft")) {
             Constants.GTNH = true;
         }
+        if (Loader.isModLoaded("WitchingGadgets")) {
+            Constants.WitchingGadgets = true;
+        }
         if (Loader.isModLoaded("Thaumcraft")) {
             RingResearch.setupResearchPage();
             ArcaneRecipes.registerArcaneRings();

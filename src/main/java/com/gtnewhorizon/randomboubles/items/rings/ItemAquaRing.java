@@ -20,6 +20,7 @@ import com.gtnewhorizon.randomboubles.util.Constants;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import thaumcraft.api.aspects.Aspect;
+import thaumcraft.common.config.ConfigItems;
 
 public class ItemAquaRing extends ItemBaubleRingBase implements IPrimordialGemCrafting {
 
@@ -112,11 +113,19 @@ public class ItemAquaRing extends ItemBaubleRingBase implements IPrimordialGemCr
     }
 
     @Override
-    public int getReturnedPearls(ItemStack stack) {
+    public int getReturnedItemAmount(ItemStack stack) {
         if (this.getDamage(stack) == 2) {
             return 1;
         } else {
             return 0;
         }
+    }
+
+    @Override
+    public ItemStack getReturnItem(ItemStack stack) {
+        if (stack.getItemDamage() == 2) {
+            return new ItemStack(ConfigItems.itemEldritchObject, this.getReturnedItemAmount(stack), 3);
+        }
+        return null;
     }
 }
