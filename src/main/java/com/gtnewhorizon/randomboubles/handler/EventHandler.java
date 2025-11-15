@@ -16,31 +16,22 @@ public class EventHandler {
         ItemStack output = event.crafting;
         if (output.getItem() instanceof IPrimordialGemCrafting && !event.player.worldObj.isRemote) {
             ItemStack returnedItem = ((IPrimordialGemCrafting) output.getItem()).getReturnItem(output);
-            int returnedAmount = ((IPrimordialGemCrafting) output.getItem()).getReturnedItemAmount(output);
             if (returnedItem != null) {
-                if (returnedAmount > 0) {
-                    System.out.println(returnedItem);
-                    double iX = event.player.posX;
-                    double iY = event.player.posY + 1;
-                    double iZ = event.player.posZ;
-                    for (int yy = -16; yy <= 16; yy++) for (int zz = -16; zz <= 16; zz++)
-                        for (int xx = -16; xx <= 16; xx++) if (event.player.worldObj.getTileEntity(
-                            (int) event.player.posX + xx,
-                            (int) event.player.posY + yy,
-                            (int) event.player.posZ + zz) instanceof TileInfusionMatrix) {
-                                iX = event.player.posX + xx;
-                                iY = event.player.posY + yy - .5;
-                                iZ = event.player.posZ + zz;
-                            }
-                    EntitySpecialItem entityitem = new EntitySpecialItem(
-                        event.player.worldObj,
-                        iX,
-                        iY,
-                        iZ,
-                        returnedItem);
-                    entityitem.motionX = entityitem.motionY = entityitem.motionZ = 0;
-                    event.player.worldObj.spawnEntityInWorld(entityitem);
-                }
+                double iX = event.player.posX;
+                double iY = event.player.posY + 1;
+                double iZ = event.player.posZ;
+                for (int yy = -16; yy <= 16; yy++) for (int zz = -16; zz <= 16; zz++)
+                    for (int xx = -16; xx <= 16; xx++) if (event.player.worldObj.getTileEntity(
+                        (int) event.player.posX + xx,
+                        (int) event.player.posY + yy,
+                        (int) event.player.posZ + zz) instanceof TileInfusionMatrix) {
+                            iX = event.player.posX + xx;
+                            iY = event.player.posY + yy - .5;
+                            iZ = event.player.posZ + zz;
+                        }
+                EntitySpecialItem entityitem = new EntitySpecialItem(event.player.worldObj, iX, iY, iZ, returnedItem);
+                entityitem.motionX = entityitem.motionY = entityitem.motionZ = 0;
+                event.player.worldObj.spawnEntityInWorld(entityitem);
             }
         }
     }

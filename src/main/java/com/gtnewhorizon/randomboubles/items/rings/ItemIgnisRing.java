@@ -113,18 +113,9 @@ public class ItemIgnisRing extends ItemBaubleRingBase implements IPrimordialGemC
     }
 
     @Override
-    public int getReturnedItemAmount(ItemStack stack) {
-        if (this.getDamage(stack) == 2) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
-
-    @Override
     public ItemStack getReturnItem(ItemStack stack) {
         if (stack.getItemDamage() == 2) {
-            return new ItemStack(ConfigItems.itemEldritchObject, this.getReturnedItemAmount(stack), 3);
+            return new ItemStack(ConfigItems.itemEldritchObject, 1, 3);
         }
         return null;
     }

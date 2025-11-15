@@ -221,25 +221,20 @@ public class ItemCombinationRings extends ItemBaubleRingBase implements IPrimord
     }
 
     @Override
-    public int getReturnedItemAmount(ItemStack stack) {
-        return 1;
-    }
-
-    @Override
     public ItemStack getReturnItem(ItemStack stack) {
         switch (stack.getItemDamage()) {
             case 0, 1, 3, 4 -> {
                 if (Constants.WitchingGadgets) {
-                    return new ItemStack(WGContent.ItemMaterial, this.getReturnedItemAmount(stack), 12);
+                    return new ItemStack(WGContent.ItemMaterial, 1, 12);
                 } else {
-                    return new ItemStack(ConfigItems.itemEldritchObject, this.getReturnedItemAmount(stack), 3);
+                    return new ItemStack(ConfigItems.itemEldritchObject, 1, 3);
                 }
             }
             case 2, 5, 6 -> {
                 if (Constants.GTNH) {
-                    return CustomItemList.PrimordialPearlFragment.get(this.getReturnedItemAmount(stack));
+                    return CustomItemList.PrimordialPearlFragment.get(1L);
                 } else {
-                    return new ItemStack(ConfigItems.itemEldritchObject, this.getReturnedItemAmount(stack), 3);
+                    return new ItemStack(ConfigItems.itemEldritchObject, 1, 3);
                 }
             }
             default -> {
