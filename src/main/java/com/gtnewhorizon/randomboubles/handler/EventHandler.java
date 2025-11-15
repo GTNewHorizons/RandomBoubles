@@ -16,8 +16,10 @@ public class EventHandler {
         ItemStack output = event.crafting;
         if (output.getItem() instanceof IPrimordialGemCrafting && !event.player.worldObj.isRemote) {
             ItemStack returnedItem = ((IPrimordialGemCrafting) output.getItem()).getReturnItem(output);
+            int returnedAmount = ((IPrimordialGemCrafting) output.getItem()).getReturnedItemAmount(output);
             if (returnedItem != null) {
-                if (((IPrimordialGemCrafting) output.getItem()).getReturnedItemAmount(output) > 0) {
+                if (returnedAmount > 0) {
+                    System.out.println(returnedItem);
                     double iX = event.player.posX;
                     double iY = event.player.posY + 1;
                     double iZ = event.player.posZ;
@@ -37,6 +39,7 @@ public class EventHandler {
                         iZ,
                         returnedItem);
                     entityitem.motionX = entityitem.motionY = entityitem.motionZ = 0;
+                    event.player.worldObj.spawnEntityInWorld(entityitem);
                 }
             }
         }

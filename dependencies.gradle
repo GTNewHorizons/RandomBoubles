@@ -17,7 +17,7 @@ dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:WitchingGadgets:1.8.8-GTNH:dev")
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:thaumicinsurgence:0.4.0:dev")
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:WarpTheory:1.5.0-GTNH:dev")
-    
+
     //GTNH
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:NewHorizonsCoreMod:2.8.51:dev")
     //Update Hodgepodge to make Twilight Forest not crash the world on startup

@@ -50,7 +50,7 @@ public class RandomBoubles {
         if (Loader.isModLoaded("Gregtech")) {
             Constants.Gregtech = true;
         }
-        if (Loader.isModLoaded("Dreamcraft")) {
+        if (Loader.isModLoaded("dreamcraft")) {
             Constants.GTNH = true;
         }
         if (Loader.isModLoaded("WitchingGadgets")) {
