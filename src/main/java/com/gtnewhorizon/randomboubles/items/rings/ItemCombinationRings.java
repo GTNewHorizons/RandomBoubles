@@ -21,8 +21,6 @@ import com.gtnewhorizon.randomboubles.RandomBoubles;
 import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
 import com.gtnewhorizon.randomboubles.util.Constants;
 
-import baubles.common.container.InventoryBaubles;
-import baubles.common.lib.PlayerHandler;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import thaumcraft.api.aspects.Aspect;
@@ -181,7 +179,6 @@ public class ItemCombinationRings extends ItemBaubleRingBase implements IPrimord
 
         if (_mRnd.nextInt(20) == 0 && itemstack.getItemDamage() >= 6) {
             EntityPlayer tPlayer = (EntityPlayer) pEntity;
-            InventoryBaubles tBaubles = PlayerHandler.getPlayerBaubles(tPlayer);
 
             Potion tPot1 = Potion.wither;
             Potion tPot2 = Potion.poison;
