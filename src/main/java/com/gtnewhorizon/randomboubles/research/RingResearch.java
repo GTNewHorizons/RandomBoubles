@@ -536,7 +536,7 @@ public class RingResearch {
         // Spellcaster's Ring of the Sky
         pages = new ResearchPage[] {
             new ResearchPage(
-                "randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY" + (Constants.WitchingGadgets ? "WG.1" : ".1")),
+                "randomboubles_research_page.RBSPELLCASTERSRINGOFTHESKY." + (Constants.WitchingGadgets ? "WG.1" : "1")),
             new ResearchPage((InfusionRecipe) recipeList.get("RBSpellcastersRingOfTheSky")) };
         researchAspects = new AspectList().add(Aspect.AIR, 12)
             .add(Aspect.FIRE, 12)
@@ -555,7 +555,7 @@ public class RingResearch {
                 .registerResearchItem();
         // Spellslinger's Ring of the Earth
         pages = new ResearchPage[] { new ResearchPage(
-            "randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH" + (Constants.WitchingGadgets ? "WG.1" : ".1")),
+            "randomboubles_research_page.RBSPELLSLINGERSRINGOFTHEEARTH." + (Constants.WitchingGadgets ? "WG.1" : "1")),
             new ResearchPage((InfusionRecipe) recipeList.get("RBSpellslingersRingoftheEarth")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 12)
             .add(Aspect.WATER, 12)
@@ -575,7 +575,7 @@ public class RingResearch {
         // Exotic Ring of the Sky
         pages = new ResearchPage[] {
             new ResearchPage(
-                "randomboubles_research_page.RBEXOTICRINGOFTHESKY" + (Constants.WitchingGadgets ? "WG.1" : ".1")),
+                "randomboubles_research_page.RBEXOTICRINGOFTHESKY." + (Constants.WitchingGadgets ? "WG.1" : "1")),
             new ResearchPage((InfusionRecipe) recipeList.get("RBExoticRingOfTheSky")) };
         researchAspects = new AspectList().add(Aspect.AIR, 14)
             .add(Aspect.FIRE, 14)
@@ -595,7 +595,7 @@ public class RingResearch {
         // Exotic Ring of the Earth
         pages = new ResearchPage[] {
             new ResearchPage(
-                "randomboubles_research_page.RBEXOTICRINGOFTHEEARTH" + (Constants.WitchingGadgets ? "WG.1" : ".1")),
+                "randomboubles_research_page.RBEXOTICRINGOFTHEEARTH." + (Constants.WitchingGadgets ? "WG.1" : "1")),
             new ResearchPage((InfusionRecipe) recipeList.get("RBExoticRingoftheEarth")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 14)
             .add(Aspect.WATER, 14)
@@ -615,7 +615,7 @@ public class RingResearch {
         // Runeforged Ring of the Sky
         pages = new ResearchPage[] {
             new ResearchPage(
-                "randomboubles_research_page.RBRUNEFORGEDRINGOFTHESKY" + (Constants.GTNH ? "GTNH.1" : ".1")),
+                "randomboubles_research_page.RBRUNEFORGEDRINGOFTHESKY." + (Constants.GTNH ? "GTNH.1" : "1")),
             new ResearchPage((InfusionRecipe) recipeList.get("RBRuneforgedRingOfTheSky")) };
         researchAspects = new AspectList().add(Aspect.AIR, 16)
             .add(Aspect.FIRE, 16)
@@ -635,7 +635,7 @@ public class RingResearch {
         // Runeforged Ring of the Earth
         pages = new ResearchPage[] {
             new ResearchPage(
-                "randomboubles_research_page.RBRUNEFORGEDRINGOFTHEEARTH" + (Constants.GTNH ? "GTNH.1" : ".1")),
+                "randomboubles_research_page.RBRUNEFORGEDRINGOFTHEEARTH." + (Constants.GTNH ? "GTNH.1" : "1")),
             new ResearchPage((InfusionRecipe) recipeList.get("RBRuneforgedRingoftheEarth")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 16)
             .add(Aspect.WATER, 16)
@@ -655,7 +655,7 @@ public class RingResearch {
 
         // Thaumaturge's Ring
         pages = new ResearchPage[] {
-            new ResearchPage("randomboubles_research_page.RBTHAUMATURGESRING" + (Constants.GTNH ? "GTNH.1" : ".1")),
+            new ResearchPage("randomboubles_research_page.RBTHAUMATURGESRING." + (Constants.GTNH ? "GTNH.1" : "1")),
             new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing")) };
         researchAspects = new AspectList().add(Aspect.EARTH, 16)
             .add(Aspect.AIR, 16)
