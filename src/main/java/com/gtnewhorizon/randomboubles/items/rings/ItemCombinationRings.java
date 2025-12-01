@@ -172,21 +172,19 @@ public class ItemCombinationRings extends ItemBaubleRingBase implements IPrimord
     }
 
     @Override
-    public void onWornTick(ItemStack itemstack, EntityLivingBase pEntity) {
-        if (!(pEntity instanceof EntityPlayer)) {
+    public void onWornTick(ItemStack itemstack, EntityLivingBase entity) {
+        if (!(entity instanceof EntityPlayer player)) {
             return;
         }
 
-        if (_mRnd.nextInt(20) == 0 && itemstack.getItemDamage() >= 6) {
-            EntityPlayer tPlayer = (EntityPlayer) pEntity;
-
+        if (player.worldObj.getTotalWorldTime() % 20 == 0 && itemstack.getItemDamage() >= 6) {
             Potion tPot1 = Potion.wither;
             Potion tPot2 = Potion.poison;
-            if (tPlayer.isPotionActive(tPot1)) {
-                tPlayer.removePotionEffect(tPot1.id);
+            if (player.isPotionActive(tPot1)) {
+                player.removePotionEffect(tPot1.id);
             }
-            if (tPlayer.isPotionActive(tPot2)) {
-                tPlayer.removePotionEffect(tPot2.id);
+            if (player.isPotionActive(tPot2)) {
+                player.removePotionEffect(tPot2.id);
             }
         }
 
