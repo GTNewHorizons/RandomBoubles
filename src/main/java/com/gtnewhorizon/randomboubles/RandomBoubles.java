@@ -47,7 +47,7 @@ public class RandomBoubles {
         if (Loader.isModLoaded("ThaumicExploration")) {
             Constants.ThaumicExploration = true;
         }
-        if (Loader.isModLoaded("Gregtech")) {
+        if (Loader.isModLoaded("gregtech")) {
             Constants.Gregtech = true;
         }
         if (Loader.isModLoaded("dreamcraft")) {
