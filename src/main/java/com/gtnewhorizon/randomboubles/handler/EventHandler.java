@@ -32,7 +32,7 @@ public class EventHandler {
                             break outer;
                         }
                 EntitySpecialItem entityitem = new EntitySpecialItem(event.player.worldObj, iX, iY, iZ, returnedItem);
-                entityitem.age = 72000;
+                entityitem.lifespan = 72000;
                 entityitem.motionX = entityitem.motionY = entityitem.motionZ = 0;
                 event.player.worldObj.spawnEntityInWorld(entityitem);
             }
