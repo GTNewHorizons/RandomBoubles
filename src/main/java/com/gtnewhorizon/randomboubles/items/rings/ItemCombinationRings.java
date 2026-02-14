@@ -16,7 +16,7 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 
-import com.dreammaster.gthandler.CustomItemList;
+import com.dreammaster.item.NHItemList;
 import com.gtnewhorizon.randomboubles.RandomBoubles;
 import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
 import com.gtnewhorizon.randomboubles.util.Constants;
@@ -227,7 +227,7 @@ public class ItemCombinationRings extends ItemBaubleRingBase implements IPrimord
             }
             case 2, 5, 6 -> {
                 if (Constants.GTNH) {
-                    return CustomItemList.PrimordialPearlFragment.get(1L);
+                    return NHItemList.PrimordialPearlFragment.get(1);
                 } else {
                     return new ItemStack(ConfigItems.itemEldritchObject, 1, 3);
                 }
