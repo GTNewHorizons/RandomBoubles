@@ -439,7 +439,7 @@ public class InfusionRecipes {
                     salisMundus, new ItemStack(ConfigBlocks.blockCrystal, 1, 5) },
                 returnInertPearlFragment));
         RingResearch.recipeList.put(
-            "RBThaumaturgesRing",
+            "RBThaumaturgesRing2",
             EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBTHAUMATURGESRING",
                 new ItemStack(BaubleItems.combinationRing, 1, 6),

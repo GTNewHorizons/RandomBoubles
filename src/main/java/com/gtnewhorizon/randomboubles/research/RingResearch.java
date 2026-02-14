@@ -656,7 +656,8 @@ public class RingResearch {
         // Thaumaturge's Ring
         pages = new ResearchPage[] {
             new ResearchPage("randomboubles_research_page.RBTHAUMATURGESRING." + (Constants.GTNH ? "GTNH.1" : "1")),
-            new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing")) };
+            new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing")),
+            new ResearchPage((InfusionRecipe) recipeList.get("RBThaumaturgesRing2"))};
         researchAspects = new AspectList().add(Aspect.EARTH, 16)
             .add(Aspect.AIR, 16)
             .add(Aspect.FIRE, 16)
