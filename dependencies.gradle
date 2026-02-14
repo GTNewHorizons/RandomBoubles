@@ -35,8 +35,7 @@ dependencies {
     //runtimeOnlyNonPublishable("com.github.GTNewHorizons:MagicBees:2.10.2-GTNH:dev")
     //runtimeOnlyNonPublishable("com.github.GTNewHorizons:Ztones-Unofficial:2.3.2-GTNH:dev")
     //runtimeOnlyNonPublishable("ganymedes01.etfuturum:Et-Futurum-Requiem:2.6.2.28-GTNH:dev") { transitive = false }
-    runtimeOnlyNonPublishable("curse.maven:thaumcraft-nei-plugin-225095:2241913") { transitive = false }
-
+    runtimeOnlyNonPublishable(rfg.deobf("curse.maven:thaumcraft-nei-plugin-225095:2241913")) { transitive = false }
 
     // deps may transitively add Baubles, so we replace it
     project.getConfigurations()
