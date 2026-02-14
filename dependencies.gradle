@@ -7,7 +7,7 @@ dependencies {
 
     compileOnly('com.github.GTNewHorizons:ThaumicBases:1.9.5:dev') {transitive=false}
     compileOnly('com.github.GTNewHorizons:Thaumic_Exploration:1.5.5-GTNH:dev') {transitive=false}
-    compileOnly('com.github.GTNewHorizons:NewHorizonsCoreMod:2.8.51:dev')
+    compileOnly('com.github.GTNewHorizons:NewHorizonsCoreMod:2.8.142:dev')
     compileOnly('com.github.GTNewHorizons:WitchingGadgets:1.8.33-GTNH:dev')
 
 
@@ -21,7 +21,7 @@ dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:WarpTheory:1.5.0-GTNH:dev")
 
     //GTNH
-    runtimeOnlyNonPublishable("com.github.GTNewHorizons:NewHorizonsCoreMod:2.8.51:dev")
+    runtimeOnlyNonPublishable("com.github.GTNewHorizons:NewHorizonsCoreMod:2.8.142:dev")
     //Update Hodgepodge to make Twilight Forest not crash the world on startup
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:Hodgepodge:2.7.16:dev")
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:ThaumicEnergistics:1.7.14-GTNH:dev")

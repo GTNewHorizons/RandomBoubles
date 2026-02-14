@@ -5,7 +5,7 @@ import java.util.List;
 
 import net.minecraft.item.ItemStack;
 
-import com.dreammaster.gthandler.CustomItemList;
+import com.dreammaster.item.NHItemList;
 import com.gtnewhorizon.gtnhlib.api.thaumcraft.EnhancedInfusionRecipe;
 import com.gtnewhorizon.randomboubles.BaubleItems;
 import com.gtnewhorizon.randomboubles.research.RingResearch;
@@ -48,8 +48,7 @@ public class InfusionRecipes {
             new EnhancedInfusionRecipe.Replacement(
                 new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                 (Constants.GTNH ? // if GTNH is loaded, otherwise, normal pearl
-                    CustomItemList.PrimordialPearlFragment.get(1L)
-                    : new ItemStack(ConfigItems.itemEldritchObject, 1, 3)),
+                    NHItemList.PrimordialPearlFragment.get(1) : new ItemStack(ConfigItems.itemEldritchObject, 1, 3)),
                 true));
 
         ItemStack salisMundus = new ItemStack(ConfigItems.itemResource, 1, 14);
