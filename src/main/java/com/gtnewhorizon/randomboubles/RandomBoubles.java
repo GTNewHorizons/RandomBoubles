@@ -1,17 +1,13 @@
 package com.gtnewhorizon.randomboubles;
 
-import net.minecraftforge.common.MinecraftForge;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.gtnewhorizon.randomboubles.handler.EventHandler;
 import com.gtnewhorizon.randomboubles.recipes.rings.ArcaneRecipes;
 import com.gtnewhorizon.randomboubles.recipes.rings.InfusionRecipes;
 import com.gtnewhorizon.randomboubles.research.RingResearch;
 import com.gtnewhorizon.randomboubles.util.Constants;
 
-import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLMissingMappingsEvent;
@@ -30,16 +26,9 @@ public class RandomBoubles {
     public static final String MODID = "randomboubles";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
 
-    public EventHandler eventHandler;
-
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         BaubleItems.init();
-        eventHandler = new EventHandler();
-        MinecraftForge.EVENT_BUS.register(eventHandler);
-        FMLCommonHandler.instance()
-            .bus()
-            .register(eventHandler);
     }
 
     @Mod.EventHandler

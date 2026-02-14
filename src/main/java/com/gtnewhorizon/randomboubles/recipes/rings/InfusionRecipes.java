@@ -1,7 +1,12 @@
 package com.gtnewhorizon.randomboubles.recipes.rings;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import net.minecraft.item.ItemStack;
 
+import com.dreammaster.item.NHItemList;
+import com.gtnewhorizon.gtnhlib.api.thaumcraft.EnhancedInfusionRecipe;
 import com.gtnewhorizon.randomboubles.BaubleItems;
 import com.gtnewhorizon.randomboubles.research.RingResearch;
 import com.gtnewhorizon.randomboubles.util.Constants;
@@ -14,10 +19,37 @@ import thaumcraft.api.aspects.Aspect;
 import thaumcraft.api.aspects.AspectList;
 import thaumcraft.common.config.ConfigBlocks;
 import thaumcraft.common.config.ConfigItems;
+import witchinggadgets.common.WGContent;
 
 public class InfusionRecipes {
 
+    private static List<EnhancedInfusionRecipe.Replacement> returnPearl;
+    private static List<EnhancedInfusionRecipe.Replacement> returnPowerlessPearl;
+    private static List<EnhancedInfusionRecipe.Replacement> returnInertPearlFragment;
+
     public static void registerArcaneRingsInfusions() {
+        InfusionRecipes.returnPearl = new ArrayList<>();
+        returnPearl.add(
+            new EnhancedInfusionRecipe.Replacement(
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                true));
+
+        InfusionRecipes.returnPowerlessPearl = new ArrayList<>(); // WG powerless pearl
+        returnPowerlessPearl.add(
+            new EnhancedInfusionRecipe.Replacement(
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                (Constants.WitchingGadgets ? // if WG is loaded, otherwise return normal pearl
+                    new ItemStack(WGContent.ItemMaterial, 1, 12) : new ItemStack(ConfigItems.itemEldritchObject, 1, 3)),
+                true));
+
+        InfusionRecipes.returnInertPearlFragment = new ArrayList<>(); // gtnh core mod inert pearl fragment
+        returnInertPearlFragment.add(
+            new EnhancedInfusionRecipe.Replacement(
+                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                (Constants.GTNH ? // if GTNH is loaded, otherwise, normal pearl
+                    NHItemList.PrimordialPearlFragment.get(1) : new ItemStack(ConfigItems.itemEldritchObject, 1, 3)),
+                true));
 
         ItemStack salisMundus = new ItemStack(ConfigItems.itemResource, 1, 14);
 
@@ -146,7 +178,7 @@ public class InfusionRecipes {
 
         RingResearch.recipeList.put(
             "RBMastersRingOfAer",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBMASTERSRINGOFAER",
                 new ItemStack(BaubleItems.aerRing, 1, 2),
                 5,
@@ -160,10 +192,11 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) },
+                returnPearl));
         RingResearch.recipeList.put(
             "RBMastersRingOfTerra",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBMASTERSRINGOFTERRA",
                 new ItemStack(BaubleItems.terraRing, 1, 2),
                 5,
@@ -177,10 +210,11 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) },
+                returnPearl));
         RingResearch.recipeList.put(
             "RBMastersRingOfIgnis",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBMASTERSRINGOFIGNIS",
                 new ItemStack(BaubleItems.ignisRing, 1, 2),
                 5,
@@ -194,10 +228,11 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1) },
+                returnPearl));
         RingResearch.recipeList.put(
             "RBMastersRingOfAqua",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBMASTERSRINGOFAQUA",
                 new ItemStack(BaubleItems.aquaRing, 1, 2),
                 5,
@@ -211,10 +246,11 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 2) },
+                returnPearl));
         RingResearch.recipeList.put(
             "RBMastersRingOfOrdo",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBMASTERSRINGOFORDO",
                 new ItemStack(BaubleItems.ordoRing, 1, 2),
                 5,
@@ -228,10 +264,11 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 4) },
+                returnPearl));
         RingResearch.recipeList.put(
             "RBMastersRingOfPerditio",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBMASTERSRINGOFPERDITIO",
                 new ItemStack(BaubleItems.perditioRing, 1, 2),
                 5,
@@ -245,12 +282,13 @@ public class InfusionRecipes {
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 5) },
+                returnPearl));
 
         // Combination Rings
         RingResearch.recipeList.put(
             "RBSpellcastersRingOfTheSky",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBSPELLCASTERSRINGOFTHESKY",
                 new ItemStack(BaubleItems.combinationRing, 1, 0),
                 5,
@@ -260,18 +298,19 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 64)
                     .add(Aspect.AURA, 48)
                     .add(Aspect.ENERGY, 32),
-                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                 new ItemStack[] { new ItemStack(BaubleItems.aerRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.ordoRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigItems.itemEldritchObject, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.ignisRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) },
+                returnPowerlessPearl));
         RingResearch.recipeList.put(
             "RBSpellslingersRingoftheEarth",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBSPELLSLINGERSRINGOFTHEEARTH",
                 new ItemStack(BaubleItems.combinationRing, 1, 3),
                 5,
@@ -281,18 +320,19 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 64)
                     .add(Aspect.AURA, 48)
                     .add(Aspect.ENERGY, 32),
-                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                 new ItemStack[] { new ItemStack(BaubleItems.terraRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.perditioRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigItems.itemEldritchObject, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), new ItemStack(BaubleItems.aquaRing, 1, 2),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) },
+                returnPowerlessPearl));
         RingResearch.recipeList.put(
             "RBExoticRingOfTheSky",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBEXOTICRINGOFTHESKY",
                 new ItemStack(BaubleItems.combinationRing, 1, 1),
                 5,
@@ -302,17 +342,18 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 128)
                     .add(Aspect.AURA, 96)
                     .add(Aspect.ENERGY, 64),
-                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.combinationRing, 1, 0),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigItems.itemEldritchObject, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.combinationRing, 1, 0),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) },
+                returnPowerlessPearl));
         RingResearch.recipeList.put(
             "RBExoticRingoftheEarth",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBEXOTICRINGOFTHEEARTH",
                 new ItemStack(BaubleItems.combinationRing, 1, 4),
                 5,
@@ -322,17 +363,18 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 128)
                     .add(Aspect.AURA, 96)
                     .add(Aspect.ENERGY, 64),
-                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.combinationRing, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigItems.itemEldritchObject, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), new ItemStack(BaubleItems.combinationRing, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) },
+                returnPowerlessPearl));
         RingResearch.recipeList.put(
             "RBRuneforgedRingOfTheSky",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBRUNEFORGEDRINGOFTHESKY",
                 new ItemStack(BaubleItems.combinationRing, 1, 2),
                 5,
@@ -342,17 +384,18 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 256)
                     .add(Aspect.AURA, 192)
                     .add(Aspect.ENERGY, 64),
-                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), new ItemStack(BaubleItems.combinationRing, 1, 1),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigItems.itemEldritchObject, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 2), new ItemStack(BaubleItems.combinationRing, 1, 1),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 4), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0) },
+                returnInertPearlFragment));
         RingResearch.recipeList.put(
             "RBRuneforgedRingoftheEarth",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBRUNEFORGEDRINGOFTHEEARTH",
                 new ItemStack(BaubleItems.combinationRing, 1, 5),
                 5,
@@ -362,18 +405,19 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 256)
                     .add(Aspect.AURA, 192)
                     .add(Aspect.ENERGY, 64),
-                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
+                new ItemStack(ConfigBlocks.blockCrystal, 1, 6),
                 new ItemStack[] { new ItemStack(ConfigBlocks.blockCrystal, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), new ItemStack(BaubleItems.combinationRing, 1, 4),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 6), salisMundus,
+                    new ItemStack(ConfigItems.itemEldritchObject, 1, 3), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(BaubleItems.combinationRing, 1, 4),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 5), salisMundus,
-                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) }));
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3) },
+                returnInertPearlFragment));
 
         RingResearch.recipeList.put(
             "RBThaumaturgesRing",
-            ThaumcraftApi.addInfusionCraftingRecipe(
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
                 "RBTHAUMATURGESRING",
                 new ItemStack(BaubleItems.combinationRing, 1, 6),
                 5,
@@ -386,13 +430,37 @@ public class InfusionRecipes {
                     .add(Aspect.MAGIC, 512)
                     .add(Aspect.AURA, 384)
                     .add(Aspect.ENERGY, 128),
-                new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
-                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 2),
+                new ItemStack(BaubleItems.combinationRing, 1, 2),
+                new ItemStack[] { new ItemStack(ConfigItems.itemEldritchObject, 1, 3),
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigBlocks.blockCrystal, 1, 2),
                     salisMundus, new ItemStack(BaubleItems.combinationRing, 1, 5), salisMundus,
                     new ItemStack(ConfigBlocks.blockCrystal, 1, 3), new ItemStack(ConfigBlocks.blockCrystal, 1, 4),
-                    salisMundus, new ItemStack(ConfigBlocks.blockCrystal, 1, 5) }));
+                    salisMundus, new ItemStack(ConfigBlocks.blockCrystal, 1, 5) },
+                returnInertPearlFragment));
+        RingResearch.recipeList.put(
+            "RBThaumaturgesRing2",
+            EnhancedInfusionRecipe.addEnhancedInfusionCraftingRecipe(
+                "RBTHAUMATURGESRING",
+                new ItemStack(BaubleItems.combinationRing, 1, 6),
+                5,
+                (new AspectList()).add(Aspect.AIR, 512)
+                    .add(Aspect.ORDER, 512)
+                    .add(Aspect.FIRE, 512)
+                    .add(Aspect.EARTH, 512)
+                    .add(Aspect.ENTROPY, 512)
+                    .add(Aspect.WATER, 512)
+                    .add(Aspect.MAGIC, 512)
+                    .add(Aspect.AURA, 384)
+                    .add(Aspect.ENERGY, 128),
+                new ItemStack(BaubleItems.combinationRing, 1, 5),
+                new ItemStack[] { new ItemStack(BaubleItems.combinationRing, 1, 2),
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 0), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 1), new ItemStack(ConfigBlocks.blockCrystal, 1, 2),
+                    salisMundus, new ItemStack(ConfigItems.itemEldritchObject, 1, 3), salisMundus,
+                    new ItemStack(ConfigBlocks.blockCrystal, 1, 3), new ItemStack(ConfigBlocks.blockCrystal, 1, 4),
+                    salisMundus, new ItemStack(ConfigBlocks.blockCrystal, 1, 5) },
+                returnInertPearlFragment));
         RingResearch.recipeList.put(
             "RBExoticThaumaturgesRing",
             ThaumcraftApi.addInfusionCraftingRecipe(

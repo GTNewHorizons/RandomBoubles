@@ -14,15 +14,13 @@ import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 
 import com.gtnewhorizon.randomboubles.RandomBoubles;
-import com.gtnewhorizon.randomboubles.items.IPrimordialGemCrafting;
 import com.gtnewhorizon.randomboubles.util.Constants;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import thaumcraft.api.aspects.Aspect;
-import thaumcraft.common.config.ConfigItems;
 
-public class ItemAquaRing extends ItemBaubleRingBase implements IPrimordialGemCrafting {
+public class ItemAquaRing extends ItemBaubleRingBase {
 
     static final int RING_COUNT = 3;
     private IIcon[] icons;
@@ -112,11 +110,4 @@ public class ItemAquaRing extends ItemBaubleRingBase implements IPrimordialGemCr
         return 0;
     }
 
-    @Override
-    public ItemStack getReturnItem(ItemStack stack) {
-        if (stack.getItemDamage() == 2) {
-            return new ItemStack(ConfigItems.itemEldritchObject, 1, 3);
-        }
-        return null;
-    }
 }
