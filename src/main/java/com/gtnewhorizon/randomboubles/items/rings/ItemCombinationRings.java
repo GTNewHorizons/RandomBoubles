@@ -16,7 +16,6 @@ import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.StatCollector;
 
-import com.dreammaster.item.NHItemList;
 import com.gtnewhorizon.randomboubles.RandomBoubles;
 
 import cpw.mods.fml.relauncher.Side;
