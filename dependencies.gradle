@@ -30,7 +30,7 @@ dependencies {
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:Galacticraft:3.4.17-GTNH:dev")
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:Electro-Magic-Tools:1.7.17:dev")
     runtimeOnlyNonPublishable("com.github.GTNewHorizons:MagicBees:2.10.4-GTNH:dev")
-    runtimeOnlyNonPublishable("com.github.GTNewHorizons:Ztones-Unofficial:2.3.2-GTNH:dev")
+    runtimeOnlyNonPublishable rfg.deobf("curse.maven:ztones-224369:2223720")
     runtimeOnlyNonPublishable("ganymedes01.etfuturum:Et-Futurum-Requiem:2.6.2.28-GTNH:dev") { transitive = false }
 
 
