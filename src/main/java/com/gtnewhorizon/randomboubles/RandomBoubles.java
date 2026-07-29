@@ -38,7 +38,7 @@ public class RandomBoubles {
         }
         if (Loader.isModLoaded("gregtech")) {
             Constants.Gregtech = true;
-        }
+        } // Note that just testing for "gregtech" also includes other gt versions (gt6)
         if (Loader.isModLoaded("dreamcraft")) {
             Constants.GTNH = true;
         }
